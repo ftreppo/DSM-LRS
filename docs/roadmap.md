@@ -1,6 +1,6 @@
 # DSM-LRS — GitHub / Drive Separation Roadmap v0.1
 
-**Status:** ACTIVE — Phase 1 complete; Gate G1 PASS  
+**Status:** ACTIVE — Phase 2 complete; Gate G2 PASS  
 **Date:** 2026-10-11  
 **Owner:** DSM-LRS project  
 **Coordination:** MindMap / REGIA only; MindMap does not own or execute the DSM-LRS product.  
@@ -74,12 +74,12 @@ No file should have two competing canonical homes.
 | ID | Task | Result | Verification / gate | Depends on |
 |---|---|---|---|---|
 | DL-20 | ✅ Create repository structure | Minimal folders for docs, specifications, tests/examples, site and DSM integration | Repository tree matches agreed architecture and contains no private data | G1 |
-| DL-21 | 🟡 Migrate public/versionable project material | Public code/specifications/contracts move from Drive staging to GitHub | File-by-file comparison or hash/content check where practical | DL-20 |
-| DL-22 | 🟡 Preserve provenance | Migrated items reference their former Drive source/version when useful | Random sample can be traced back to origin | DL-21 |
-| DL-23 | Remove obsolete duplicate canon | Drive copies that are no longer canonical are clearly marked archive/reference, not silently deleted | No ambiguous “current” copy remains in Drive | DL-21 |
-| DL-24 | Add release/change discipline | Changelog/release convention and version identifiers defined | One test change can be traced from commit to published version | DL-21 |
+| DL-21 | ✅ Migrate public/versionable project material | Public code/specifications/contracts move from Drive staging to GitHub | File-by-file comparison or hash/content check where practical | DL-20 |
+| DL-22 | ✅ Preserve provenance | Migrated items reference their former Drive source/version when useful | Random sample can be traced back to origin | DL-21 |
+| DL-23 | ✅ Remove obsolete duplicate canon | Drive copies that are no longer canonical are clearly marked archive/reference, not silently deleted | No ambiguous “current” copy remains in Drive | DL-21 |
+| DL-24 | ✅ Add release/change discipline | Changelog/release convention and version identifiers defined | One test change can be traced from commit to published version | DL-21 |
 
-**Gate G2 — GitHub product canon established:** GitHub is authoritative for product/versioned material; Drive no longer competes for that role.
+**Gate G2 — GitHub product canon established: ✅ PASS.** Current public/product material is canonical on GitHub; Drive `00_START_HERE` explicitly marks remaining product copies as provenance/archive evidence while Drive remains canonical for Library/protected/operational content. Version `0.1.0-alpha.1`, `CHANGELOG.md` and `docs/versioning.md` establish change discipline.
 
 ---
 
@@ -153,9 +153,9 @@ No file should have two competing canonical homes.
 
 ## Immediate next action
 
-**DL-21C — Make World News tests repository-portable.**
+**DL-30 — Prepare the existing pilot source as the official GitHub Pages site.**
 
-DL-20 is complete. DL-21 and DL-22 are in progress. Verified migrations now include Source Library technical schemas, Adapter core v2.5 / release v2.5.1, the synthetic public pilot site, Parent Prompt QUICK v0.2, the World News product pipeline, generic protected-core contracts, and Auth MVP v0.3-public.1. DL-21B is PASS for public source/local synthetic testing with 16/16 regression tests and fresh-start verification. Provenance is recorded in [docs/migration/provenance-v0.1.md](./migration/provenance-v0.1.md); open residuals are tracked in [docs/migration/residuals-v0.1.md](./migration/residuals-v0.1.md).
+Phase 2 is complete. The current public/product baseline is migrated and versioned as `0.1.0-alpha.1`; World News tests are repository-portable (9/9 PASS), Auth MVP `v0.3-public.1` is verified for public source/local synthetic testing (16/16 PASS), provenance is recorded, and Drive explicitly defers product canon to GitHub. Next is Phase 3: convert the already migrated `site/` pilot source into the official GitHub Pages entry point.
 
 ## Explicit non-goals
 
