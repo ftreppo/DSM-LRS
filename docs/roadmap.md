@@ -1,6 +1,6 @@
 # DSM-LRS — GitHub / Drive Separation Roadmap v0.1
 
-**Status:** RELEASE-READY — G2/G3/G4/G5 PASS; DL-60…DL-65 PASS; DL-66 manual tag pending  
+**Status:** BASELINE RELEASED — G0–G6 PASS; C13 remains the only required follow-up  
 **Date:** 2026-10-11  
 **Owner:** DSM-LRS project  
 **Coordination:** MindMap / REGIA only; MindMap does not own or execute the DSM-LRS product.  
@@ -35,7 +35,7 @@ independent public repo
 
 - **DSM-LRS GitHub:** public product, code, public specifications, tests, public documentation, website/GitHub Pages and release history.
 - **Google Drive Library:** source/reference documents used by DSM-LRS, including general dyslexia/LRS material, learning guidelines and protected/personalized documents.
-- **LRS Adapter GitHub (future):** generic reusable adapter only, after extraction gate passes.
+- **LRS Adapter GitHub:** `ftreppo/lrs-adapter` is canonical for the generic reusable Adapter, its generic contracts/tests and Community Adapter Lab.
 - **MindMap:** coordination, roadmap visibility and cross-project dependencies only. It must never become a runtime dependency of DSM-LRS or LRS Adapter.
 
 No file should have two competing canonical homes.
@@ -92,7 +92,7 @@ No file should have two competing canonical homes.
 | DL-32 | ✅ Add Welcome | New visitor can understand purpose, audience and first action | 30-second comprehension test with no project background | DL-31 |
 | DL-33 | ✅ Add Help | Common actions, limitations, troubleshooting and privacy boundary documented | At least five representative tasks can be resolved from Help | DL-31 |
 | DL-34 | ✅ Add User Manual | End-to-end user-facing guide separate from developer documentation | Fresh-user walkthrough reaches first successful use without internal MindMap knowledge | DL-31 |
-| DL-35 | Public/no-account verification | Page and public repository work without GitHub login | Test in signed-out/incognito browser; links and downloads resolve | DL-30–DL-34 |
+| DL-35 | ✅ Public/no-account verification | Page and public repository work without GitHub login | Signed-out/incognito verification PASS | DL-30–DL-34 |
 
 **Gate G3 — Public UX ready: ✅ PASS.** GitHub Pages is enabled with GitHub Actions; deployment run #11 completed SUCCESS for commit `937542cba2152da73ae77f19eb956a28d85f8048`; the live site at `https://ftreppo.github.io/DSM-LRS/` was verified successfully in a signed-out/private browser.
 
