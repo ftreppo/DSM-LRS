@@ -94,7 +94,7 @@ No file should have two competing canonical homes.
 | DL-34 | ✅ Add User Manual | End-to-end user-facing guide separate from developer documentation | Fresh-user walkthrough reaches first successful use without internal MindMap knowledge | DL-31 |
 | DL-35 | Public/no-account verification | Page and public repository work without GitHub login | Test in signed-out/incognito browser; links and downloads resolve | DL-30–DL-34 |
 
-**Gate G3 — Public UX ready: 🟡 PENDING DL-35.** Source, IA, Welcome, Help and User Manual are complete and privacy-scanned. The GitHub Pages workflow is present; final gate requires Pages to be enabled as a GitHub Actions publishing source and the live URL to be verified signed-out.
+**Gate G3 — Public UX ready: 🟡 FINAL VISUAL CHECK.** GitHub Pages is enabled with GitHub Actions and deployment run #11 completed SUCCESS for commit `937542cba2152da73ae77f19eb956a28d85f8048`. GitHub reports the live environment URL `https://ftreppo.github.io/DSM-LRS/`. Final gate requires one signed-out/private-browser visual check.
 
 ---
 
