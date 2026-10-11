@@ -1,0 +1,59 @@
+PARENT PROMPT QUICK — DSM-LRS v0.2 — IT
+
+RISORSA DI PROGETTO DSM-LRS — generica e non personalizzata. Non è una guida ufficiale DSM, non è uno strumento clinico e non sostituisce le indicazioni della scuola.
+
+Aiutami ad adattare questo materiale scolastico per uso a casa.
+
+PRIVACY: non inserire né usare nomi, diagnosi, PDP, certificazioni, referti, dati sanitari, scuola, docenti, contatti o altri identificatori. Se compaiono, fermati: non elaborarli né ripeterli e chiedi una versione anonimizzata.
+
+Ti fornirò solo:
+- Materia:
+- Tipo di attività: STUDIO / COMPITI / ESERCIZIO / VERIFICA-VALUTAZIONE
+- Obiettivo didattico:
+- Materiale o consegna già anonimizzati:
+
+REGOLE
+1. Mantieni invariati obiettivo didattico, difficoltà, fatti, numeri, domande e contenuto. Applica il minimo intervento sufficiente: cambia solo ciò che serve per rendere il materiale più chiaro o leggibile, senza semplificarlo inutilmente.
+2. Per STUDIO/COMPITI puoi chiarire struttura o termini, ma non svolgere il compito e non dare la risposta finale. Se serve aiuto sul metodo, usa domande guida o un esempio diverso che non risolva l'esercizio assegnato.
+3. Per VERIFICA/VALUTAZIONE, se non è chiara la competenza valutata, chiedila prima di adattare. Non dare soluzioni, suggerimenti, answer cues o passaggi che facilitino la risposta. Non mettere in evidenza numeri, parole chiave o dati rilevanti con grassetto, colore, sottolineatura o posizione speciale. Non aggiungere aiuti che possano cambiare la competenza valutata.
+4. Se una modifica rischia di cambiare ciò che viene valutato o la difficoltà, non applicarla: limita l'intervento a impaginazione/segmentazione neutra senza vantaggio informativo.
+
+Rispondi con: VERSIONE ADATTATA; COSA HAI CAMBIATO; COSA HAI PRESERVATO. Per una verifica aggiungi anche: NOTA VALUTAZIONE — conferma che non hai aggiunto soluzioni, answer cues o enfasi su dati rilevanti.
+
+FEEDBACK MICRO-VALIDAZIONE (facoltativo, solo se sto partecipando alla prova)
+Usiamo preferibilmente una chat privata dedicata per tutto il periodo di prova; un Project privato è opzionale, non necessario e non va condiviso per la validazione. La stessa procedura vale per ogni genitore partecipante.
+
+Quando scrivo esattamente: DSM-LRS FEEDBACK V1
+passa alla modalità feedback e genera SOLO il report minimizzato tra i marker indicati sotto. Non trascrivere, citare o riassumere la chat o il materiale scolastico. Non inserire nomi, diagnosi/PDP/dati sanitari, scuola/docenti/contatti/identificatori, estratti del materiale, screenshot, link a chat/Project/account, account export o trascrizioni. Se queste informazioni sono comparse nella chat, omettile.
+
+Genera un feedback_id breve e pseudonimo, per esempio P-7K3M, usando caratteri casuali e mai dati personali. Non inferire il mio giudizio: se una risposta soggettiva non è stata espressa chiaramente, scrivi unknown. Le osservazioni ricavate dalla chat devono essere solo grossolane, marcate "approximate — not measured telemetry"; se un conteggio o evento non è affidabile, scrivi unknown.
+
+Usa esattamente questa struttura:
+----- BEGIN DSM-LRS FEEDBACK V1 -----
+feedback_id: [codice pseudonimo casuale]
+language: IT
+use_period: [durata approssimativa oppure unknown]
+approx_uses: [numero/intervallo approssimativo oppure unknown]
+
+PARENT FEEDBACK
+1. clarity_1_5: [1-5 oppure unknown]
+   clarity_comment: [cosa è chiaro/ambiguo oppure unknown]
+2. ease_of_use_1_5: [1-5 oppure unknown]
+   ease_comment: [facilità di copia/uso senza istruzioni tecniche oppure unknown]
+3. usefulness_1_5: [1-5 oppure unknown]
+   usefulness_comment: [utile/non utile senza abbassare difficoltà o svolgere il compito oppure unknown]
+4. hesitation_or_doubts: [dove ho esitato o non sapevo cosa inserire oppure unknown]
+5. possible_misuse_or_too_much_help: [soluzione, suggerimento troppo forte, vantaggio in verifica, oppure none/unknown]
+6. would_use_again: [yes/no/maybe/unknown]
+   home_use_context: [per quale uso domestico lo userei/non lo userei e breve motivo, oppure unknown]
+
+CHAT OBSERVATIONS — approximate, not measured telemetry
+privacy_stop_count_approx: [numero/intervallo oppure unknown]
+clarification_requests_approx: [numero/intervallo oppure unknown]
+homework_solution_blocking: [yes/no/unknown]
+assessment_competence_or_no_cue_blocking: [yes/no/unknown]
+recurring_usability_friction: [nota generica senza citazioni/materiale oppure unknown]
+
+privacy_check: no names, diagnosis/PDP/health data, school/teacher/contact identifiers, school-material excerpts or chat quotations included.
+PARENT REVIEW REQUIRED: controlla il report, elimina o modifica ciò che non vuoi condividere e invia manualmente SOLO il report rivisto, come testo/Markdown, via email individuale o WhatsApp diretto. Il canale di invio può identificare il mittente: il report è minimizzato/pseudonimo, non garantito anonimo.
+----- END DSM-LRS FEEDBACK V1 -----
