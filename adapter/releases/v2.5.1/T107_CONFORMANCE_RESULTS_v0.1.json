@@ -1,0 +1,86 @@
+{
+  "task": "T107",
+  "decision": "D039",
+  "date": "2026-09-20",
+  "data_boundary": "PUBLIC SAFE / FICTITIOUS ONLY",
+  "adapter_core_version": "2.5",
+  "release_version": "2.5.1",
+  "core_equivalence": "BYTE_IDENTICAL_FOR_DSM_PORTABLE_GEMINI_AND_V2_5_GOVERNANCE_TEMPLATES",
+  "behavior_change": "NO",
+  "pedagogical_rule_change": "NO",
+  "privacy_boundary_change": "NO",
+  "authority_change": "NO",
+  "conformance_manifest": "ADAPTER_CONFORMANCE_MANIFEST_v1.0",
+  "conformance_manifest_status": "CANONICAL_D038",
+  "source_state_date": "2026-09-20",
+  "source_state_basis": "T106 audit snapshot",
+  "official_source_freshness": "REVIEW_REQUIRED_BEFORE_REAL_OPERATIONAL_USE",
+  "gates": {
+    "C01": {
+      "result": "PASS",
+      "remediation_required": false,
+      "evidence": "T106 PASS baseline + byte-identical Adapter core 2.5 packaged in release 2.5.1; no source/behavioral change."
+    },
+    "C02": {
+      "result": "PASS",
+      "remediation_required": false,
+      "evidence": "T106 PASS baseline + byte-identical Adapter core 2.5 packaged in release 2.5.1; no source/behavioral change."
+    },
+    "C03": {
+      "result": "PASS",
+      "remediation_required": false,
+      "evidence": "T106 PASS baseline + byte-identical Adapter core 2.5 packaged in release 2.5.1; no source/behavioral change."
+    },
+    "C04": {
+      "result": "PASS",
+      "remediation_required": false,
+      "evidence": "T106 PASS baseline + byte-identical Adapter core 2.5 packaged in release 2.5.1; no source/behavioral change."
+    },
+    "C05": {
+      "result": "PASS",
+      "remediation_required": false,
+      "evidence": "T106 PASS baseline + byte-identical Adapter core 2.5 packaged in release 2.5.1; no source/behavioral change."
+    },
+    "C06": {
+      "result": "PASS",
+      "remediation_required": false,
+      "evidence": "T106 PASS baseline + byte-identical Adapter core 2.5 packaged in release 2.5.1; no source/behavioral change."
+    },
+    "C07": {
+      "result": "PASS",
+      "remediation_required": false,
+      "evidence": "T106 PASS baseline + byte-identical Adapter core 2.5 packaged in release 2.5.1; no source/behavioral change."
+    },
+    "C08": {
+      "result": "PASS",
+      "remediation_required": false,
+      "evidence": "T106 PASS baseline + byte-identical Adapter core 2.5 packaged in release 2.5.1; no source/behavioral change."
+    },
+    "C09": {
+      "result": "PASS",
+      "remediation_required": false,
+      "evidence": "T106 PASS baseline + byte-identical Adapter core 2.5 packaged in release 2.5.1; no source/behavioral change."
+    },
+    "C10": {
+      "result": "PASS",
+      "remediation_required": false,
+      "evidence": "T106 PASS baseline + byte-identical Adapter core 2.5 packaged in release 2.5.1; no source/behavioral change."
+    },
+    "C11": {
+      "result": "PASS",
+      "remediation_required": false,
+      "evidence": "T106 PASS baseline + byte-identical Adapter core 2.5 packaged in release 2.5.1; no source/behavioral change."
+    },
+    "C12": {
+      "result": "PASS",
+      "remediation_required": false,
+      "evidence": "v2.5.1 source note and changelog explicitly identify adapter_core_version 2.5, release_version 2.5.1, ADAPTER_CONFORMANCE_MANIFEST_v1.0 / CANONICAL_D038, source_state_date 2026-09-20, changed rules/sections=none, T107 verification evidence, and compatibility/migration note."
+    },
+    "C13": {
+      "result": "REVIEW",
+      "remediation_required": true,
+      "evidence": "official_source_freshness=REVIEW_REQUIRED_BEFORE_REAL_OPERATIONAL_USE; no freshness verification was performed by T107.",
+      "note": "2015 DSM guideline remains CURRENT_KNOWN_PROJECT_SOURCE only; no current-official-rule compliance claim is authorized."
+    }
+  }
+}
