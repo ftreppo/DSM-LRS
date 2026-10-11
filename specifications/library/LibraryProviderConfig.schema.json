@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dsm-lrs.invalid/schemas/library-provider-config-v0.1.json",
+  "title": "DSM-LRS Library Provider Config",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "provider", "roots"],
+  "properties": {
+    "version": {"const": "0.1"},
+    "provider": {"enum": ["google_drive", "local"]},
+    "roots": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["class", "locator", "access"],
+        "properties": {
+          "class": {"enum": ["GENERAL_DSM", "GENERAL_LRS", "PROTECTED_PERSONALIZED"]},
+          "locator": {"type": "string", "minLength": 1},
+          "access": {"enum": ["REFERENCE", "PROTECTED"]},
+          "required": {"type": "boolean", "default": false}
+        }
+      }
+    }
+  }
+}
