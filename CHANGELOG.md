@@ -15,6 +15,13 @@ All notable public/product changes to DSM-LRS are recorded here.
 
 **Pending:** one-time GitHub Pages enablement and signed-out live verification (DL-35).
 
+### Library architecture
+- formalized the Google Drive Library taxonomy without moving existing folders;
+- added provider-neutral Library contract and configuration schema;
+- added Google Drive and local provider examples with no private locator values;
+- added Library source-governance rules;
+- added fail-closed Library reference tests: **6/6 PASS**.
+
 Versioning follows the project convention in [docs/versioning.md](docs/versioning.md).
 
 ## 0.1.0-alpha.1 — 2026-10-11
