@@ -158,15 +158,15 @@ This workstream collects public-safe Adapter use as evidence for product improve
 
 | ID | Task | Result | Verification / gate | Depends on |
 |---|---|---|---|---|
-| DL-60 | Cross-repository architecture check | DSM-LRS, LRS Adapter and Drive Library have non-overlapping ownership | Dependency diagram and canonical-home audit pass | G4, G5 |
-| DL-61 | Privacy/publication scan | No student, diagnostic, PDP or protected Library content is in public Git history/site | Repository history + site output reviewed; synthetic examples only | DL-60 |
-| DL-62 | Fresh-user public test | Non-technical visitor understands project and can access manual/resources | Test without GitHub account | DL-35, DL-60 |
-| DL-63 | Fresh-developer test | Developer can clone/build/test DSM-LRS and Adapter from public instructions | Clean environment smoke test | DL-56 |
-| DL-64 | Library integration test | Authorized Library access works; unauthorized/unavailable access fails safely | Positive + negative access cases documented | DL-44, DL-56 |
-| DL-65 | Canonical-source conflict audit | No active document/code/state has two authoritative homes | Audit returns zero unresolved conflicts | DL-60–DL-64 |
+| DL-60 | ✅ Cross-repository architecture check | DSM-LRS, LRS Adapter and Drive Library have non-overlapping ownership | Canonical boundary audit PASS | G4, G5 |
+| DL-61 | ✅ Privacy/publication scan | No real student/diagnostic/PDP/protected content found in current public trees/site | Secret/email/private-link scan PASS; only defensive test strings and `@example.invalid` synthetic data found | DL-60 |
+| DL-62 | ✅ Fresh-user public test | Public site accessible signed-out; manual/help/community available | User private-browser verification PASS | DL-35, DL-60 |
+| DL-63 | ✅ Fresh-developer test | Clean GitHub Actions checkouts test both repositories | lrs-adapter CI SUCCESS; DSM-LRS CI SUCCESS with 31 tests | DL-56 |
+| DL-64 | ✅ Library integration test | Provider contract positive/negative cases verified | 6/6 Library tests PASS in public CI | DL-44, DL-56 |
+| DL-65 | ✅ Canonical-source conflict audit | No active document/code/state has two authoritative homes | Zero unresolved active canon conflicts; extraction copies explicitly non-canonical | DL-60–DL-64 |
 | DL-66 | Tag first public architecture baseline | DSM-LRS public baseline released with known status and limitations | Release/tag, changelog and public page agree on version | DL-65 |
 
-**Gate G6 — Release ready:** publication only after privacy, portability, fresh-user and canonical-source checks pass.
+**Gate G6 — Release ready: 🟡 READY FOR DL-66 TAG.** DL-60–DL-65 PASS. C13 remains an explicit source-freshness limitation and does not authorize claims of current official DSM-rule compliance. The remaining step is DL-66: create the first public architecture tag/release.
 
 ---
 
@@ -176,9 +176,9 @@ This workstream collects public-safe Adapter use as evidence for product improve
 
 ## Immediate next action
 
-**DL-60 — Cross-repository architecture check.**
+**DL-66 — Tag the first public architecture baseline.**
 
-DL-54–DL-57 and CL-06 are complete. `lrs-adapter` is canonical for the generic Adapter; DSM-LRS is the consumer/integrator.
+DL-60–DL-65 are complete. The connector in this session cannot create Git tags/releases, so DL-66 is the sole remaining manual release action.
 
 Phase 2 is complete. The current public/product baseline is migrated and versioned as `0.1.0-alpha.1`; World News tests are repository-portable (9/9 PASS), Auth MVP `v0.3-public.1` is verified for public source/local synthetic testing (16/16 PASS), provenance is recorded, and Drive explicitly defers product canon to GitHub. Next is Phase 3: convert the already migrated `site/` pilot source into the official GitHub Pages entry point.
 
