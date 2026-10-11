@@ -176,7 +176,7 @@ This workstream collects public-safe Adapter use as evidence for product improve
 
 ## Immediate next action
 
-**C13 — Verify the current protected DSM guideline and its alignment with current BLASchA/KMK 2024/2025 authority sources.**
+**C13 — Discuss with Richard Keiner on 2026-10-13 at 08:30: verify the current protected DSM guideline and its alignment with current BLASchA/KMK 2024/2025 authority sources.**
 
 The architecture/publication roadmap through G6 is complete. C13 is the only open required follow-up.
 
