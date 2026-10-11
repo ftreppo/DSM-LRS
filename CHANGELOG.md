@@ -25,7 +25,7 @@ All notable public/product changes to DSM-LRS are recorded here.
 - added GitHub Pages workflow publishing only `site/`;
 - completed static syntax/i18n/privacy scans.
 
-**Pending:** one-time GitHub Pages enablement and signed-out live verification (DL-35).
+**GitHub Pages:** deployed successfully and verified signed-out; DL-35 / G3 PASS.
 
 ### Generic Adapter extraction
 - classified Adapter components into GENERIC vs DSM-SPECIFIC;
