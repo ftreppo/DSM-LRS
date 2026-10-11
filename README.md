@@ -33,11 +33,11 @@ Examples and tests must use synthetic or otherwise non-sensitive data.
 
 ### Community Adapter Lab
 
-You can contribute an anonymized Adapter result through the structured GitHub form:
+**Deutsch:** [Adapter-Beispiel einreichen](https://github.com/ftreppo/DSM-LRS/issues/new?template=adapter-example.yml) — öffentlich, anonymisiert, keine persönlichen oder geschützten Daten. Eine rohe Submission wird erst nach Review zu einem kuratierten Beispiel oder Verbesserungskandidaten.
 
-**[Submit an Adapter Example](https://github.com/ftreppo/DSM-LRS/issues/new?template=adapter-example.yml)**
+**Italiano:** [Invia un esempio dell'Adapter](https://github.com/ftreppo/DSM-LRS/issues/new?template=adapter-example.yml) — pubblico, anonimizzato, senza dati personali o protetti. Una submission grezza diventa un esempio curato o un candidato di miglioramento solo dopo revisione.
 
-Submissions are public and must contain no personal/protected data. Raw submissions are reviewed before they can become curated examples or improvement candidates.
+**English:** [Submit an Adapter Example](https://github.com/ftreppo/DSM-LRS/issues/new?template=adapter-example.yml) — public, anonymized, and free of personal/protected data. A raw submission becomes a curated example or improvement candidate only after review.
 
 See [Community Adapter Lab](docs/community/COMMUNITY_ADAPTER_LAB.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
 
