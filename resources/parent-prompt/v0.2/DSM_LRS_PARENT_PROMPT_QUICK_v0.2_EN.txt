@@ -1,0 +1,59 @@
+PARENT PROMPT QUICK — DSM-LRS v0.2 — EN
+
+DSM-LRS PROJECT RESOURCE — generic and non-personalized. It is not official DSM guidance, not a clinical tool, and not a substitute for school instructions.
+
+Help me adapt this school material for use at home.
+
+PRIVACY: Do not use names, diagnoses, PDP/accommodation plans, certificates, clinical reports, health data, school names, teacher names, contact details, or other identifiers. If any appear, stop: do not process or repeat them and ask for an anonymized version.
+
+I will provide only:
+- Subject:
+- Activity type: STUDY / HOMEWORK / PRACTICE / ASSESSMENT-GRADED TASK
+- Learning objective:
+- Material or instruction, already anonymized:
+
+RULES
+1. Preserve the learning objective, difficulty, facts, numbers, questions, and content. Apply the smallest sufficient intervention: change only what is needed for clearer access or readability, without unnecessary simplification.
+2. For STUDY/HOMEWORK, you may clarify structure or terms, but do not complete the assignment or give the final answer. If method help is needed, use guiding questions or a different example that does not solve the assigned task.
+3. For ASSESSMENT/GRADED TASKS, if the assessed competence is unclear, ask for it before adapting. Do not give solutions, hints, answer cues, or intermediate steps that make the answer easier. Do not highlight answer-relevant numbers, keywords, or data with bold, color, underlining, or special placement. Do not add aids that could change the assessed competence.
+4. If a change could alter what is being assessed or the difficulty, do not apply it: limit the adaptation to neutral layout/segmentation that gives no informational advantage.
+
+Reply with: ADAPTED VERSION; WHAT YOU CHANGED; WHAT YOU PRESERVED. For an assessment also add: ASSESSMENT NOTE — confirm that you added no solution, answer cues, or answer-relevant emphasis.
+
+MICRO-VALIDATION FEEDBACK (optional, only if I am taking part in the trial)
+Prefer one dedicated private chat for the whole trial period; a private Project is optional, not required, and must not be shared for the validation. The same procedure applies to every parent participant.
+
+When I type exactly: DSM-LRS FEEDBACK V1
+switch to feedback mode and generate ONLY the minimized report between the markers below. Do not transcribe, quote, or summarize the chat or school material. Do not include names, diagnoses/PDP/health data, school/teacher/contact identifiers, material excerpts, screenshots, chat/Project/account links, account exports, or transcripts. If such information appeared in the chat, omit it.
+
+Generate a short pseudonymous feedback_id, for example P-7K3M, using arbitrary random characters and never personal data. Do not infer my judgment: if a subjective answer was not clearly expressed by me, write unknown. Observations inferred from the chat must be coarse only and labelled "approximate — not measured telemetry"; if a count or event cannot be determined reliably, write unknown.
+
+Use exactly this structure:
+----- BEGIN DSM-LRS FEEDBACK V1 -----
+feedback_id: [random pseudonymous code]
+language: EN
+use_period: [approximate duration or unknown]
+approx_uses: [approximate number/range or unknown]
+
+PARENT FEEDBACK
+1. clarity_1_5: [1-5 or unknown]
+   clarity_comment: [what is clear/ambiguous or unknown]
+2. ease_of_use_1_5: [1-5 or unknown]
+   ease_comment: [ease of copying/using without technical instructions or unknown]
+3. usefulness_1_5: [1-5 or unknown]
+   usefulness_comment: [useful/not useful without lowering difficulty or doing the task, or unknown]
+4. hesitation_or_doubts: [where I hesitated or did not know what to enter, or unknown]
+5. possible_misuse_or_too_much_help: [solution, overly strong hint, assessment advantage, or none/unknown]
+6. would_use_again: [yes/no/maybe/unknown]
+   home_use_context: [what home use I would/would not use it for and short reason, or unknown]
+
+CHAT OBSERVATIONS — approximate, not measured telemetry
+privacy_stop_count_approx: [number/range or unknown]
+clarification_requests_approx: [number/range or unknown]
+homework_solution_blocking: [yes/no/unknown]
+assessment_competence_or_no_cue_blocking: [yes/no/unknown]
+recurring_usability_friction: [generic note without quotations/material or unknown]
+
+privacy_check: no names, diagnosis/PDP/health data, school/teacher/contact identifiers, school-material excerpts or chat quotations included.
+PARENT REVIEW REQUIRED: review the report, remove or change anything you do not want to share, and manually send ONLY the reviewed report as text/Markdown by one-to-one email or direct WhatsApp. The transport channel may identify the sender: the report is minimized/pseudonymous, not guaranteed anonymous.
+----- END DSM-LRS FEEDBACK V1 -----
