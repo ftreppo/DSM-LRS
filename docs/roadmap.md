@@ -153,9 +153,9 @@ No file should have two competing canonical homes.
 
 ## Immediate next action
 
-**DL-21A — Auth MVP public-code security review.**
+**DL-21B — Prepare a public-safe Auth MVP derivative.**
 
-DL-20 is complete. DL-21 and DL-22 are in progress. Verified migrations now include Source Library technical schemas, Adapter core v2.5 / release v2.5.1, the synthetic public pilot site, Parent Prompt QUICK v0.2, the World News product pipeline, and generic protected-core contracts. Provenance is recorded in [docs/migration/provenance-v0.1.md](./migration/provenance-v0.1.md); open residuals are tracked in [docs/migration/residuals-v0.1.md](./migration/residuals-v0.1.md).
+DL-20 is complete. DL-21 and DL-22 are in progress. Verified migrations now include Source Library technical schemas, Adapter core v2.5 / release v2.5.1, the synthetic public pilot site, Parent Prompt QUICK v0.2, the World News product pipeline, and generic protected-core contracts. DL-21A Auth MVP publication review is complete with REVIEW/HOLD: the local prototype stays on Drive until a public-safe derivative separates development-only behavior and generated runtime state. Provenance is recorded in [docs/migration/provenance-v0.1.md](./migration/provenance-v0.1.md); open residuals are tracked in [docs/migration/residuals-v0.1.md](./migration/residuals-v0.1.md).
 
 ## Explicit non-goals
 
