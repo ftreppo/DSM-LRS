@@ -1,3 +1,6 @@
+> **Canonical generic Community Lab:** https://github.com/ftreppo/lrs-adapter
+> Generic Adapter submissions now belong in `lrs-adapter`. DSM-LRS may retain DSM-specific case studies and integrations.
+
 # Community Adapter Lab
 
 ---
@@ -37,7 +40,7 @@ TEST / VERIFIKATION / RELEASE-GATE
 
 Verwende das öffentliche GitHub-Formular:
 
-**[Adapter-Beispiel einreichen](https://github.com/ftreppo/DSM-LRS/issues/new?template=adapter-example.yml)**
+**[Adapter-Beispiel einreichen](https://github.com/ftreppo/lrs-adapter/issues/new?template=adapter-example.yml)**
 
 Das Issue ist öffentlich. Das Formular enthält verpflichtende Datenschutz- und Rechte-Bestätigungen.
 
@@ -121,7 +124,7 @@ TEST / VERIFICA / RELEASE GATE
 
 Usa il modulo pubblico GitHub:
 
-**[Invia un esempio dell'Adapter](https://github.com/ftreppo/DSM-LRS/issues/new?template=adapter-example.yml)**
+**[Invia un esempio dell'Adapter](https://github.com/ftreppo/lrs-adapter/issues/new?template=adapter-example.yml)**
 
 La Issue è pubblica. Il modulo contiene conferme obbligatorie su privacy e diritto di condivisione.
 
@@ -205,7 +208,7 @@ TEST / VERIFICATION / RELEASE GATE
 
 Use the public GitHub form:
 
-**[Submit an Adapter Example](https://github.com/ftreppo/DSM-LRS/issues/new?template=adapter-example.yml)**
+**[Submit an Adapter Example](https://github.com/ftreppo/lrs-adapter/issues/new?template=adapter-example.yml)**
 
 The issue is public. The form contains mandatory privacy and sharing-rights confirmations.
 
