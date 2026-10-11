@@ -102,13 +102,13 @@ No file should have two competing canonical homes.
 
 | ID | Task | Result | Verification / gate | Depends on |
 |---|---|---|---|---|
-| DL-40 | Define Library taxonomy | Separate general references, DSM-specific sources and protected/personalized material | Folder/content sample maps unambiguously to one class | G1 |
-| DL-41 | Separate public references from protected content | Privacy boundary is explicit and enforceable | Protected examples are not reachable from public GitHub/Page | DL-40 |
-| DL-42 | Define Library interface/contract | DSM-LRS refers to Library content through stable identifiers/configuration, not hard-coded personal paths where avoidable | Test configuration can point to another Library root/provider | DL-40 |
-| DL-43 | Document source provenance and update rules | General dyslexia/LRS guidance can be updated independently from software releases | Updating a Library document does not require a DSM-LRS code release unless contract changes | DL-42 |
-| DL-44 | Failure-mode test | Product behaves predictably when Library content is unavailable or access is denied | No leakage, silent fallback or accidental publication | DL-41, DL-42 |
+| DL-40 | ✅ Define Library taxonomy | Separate general references, DSM-specific sources and protected/personalized material | Folder/content sample maps unambiguously to one class | G1 |
+| DL-41 | ✅ Separate public references from protected content | Privacy boundary is explicit and enforceable | Protected examples are not reachable from public GitHub/Page | DL-40 |
+| DL-42 | ✅ Define Library interface/contract | DSM-LRS refers to Library content through stable identifiers/configuration, not hard-coded personal paths where avoidable | Test configuration can point to another Library root/provider | DL-40 |
+| DL-43 | ✅ Document source provenance and update rules | General dyslexia/LRS guidance can be updated independently from software releases | Updating a Library document does not require a DSM-LRS code release unless contract changes | DL-42 |
+| DL-44 | ✅ Failure-mode test | Product behaves predictably when Library content is unavailable or access is denied | No leakage, silent fallback or accidental publication | DL-41, DL-42 |
 
-**Gate G4 — Library boundary verified:** Drive is knowledge/content storage, not a hidden code dependency or public hosting substitute.
+**Gate G4 — Library boundary verified: ✅ PASS.** Drive taxonomy is recorded in `00_START_HERE`; the public LibraryProvider contract supports Google Drive or local configuration without exposing private locators; source governance is documented; fail-closed reference tests pass 6/6.
 
 ---
 
@@ -153,7 +153,9 @@ No file should have two competing canonical homes.
 
 ## Immediate next action
 
-**DL-35 — Enable GitHub Pages publishing and verify the live site without an account.**
+**DL-50 — Inventory Adapter-specific components and classify GENERIC vs DSM-SPECIFIC.**
+
+DL-35 remains an independent manual publication gate (Issue #1) and does not block Adapter architecture work.
 
 Phase 2 is complete. The current public/product baseline is migrated and versioned as `0.1.0-alpha.1`; World News tests are repository-portable (9/9 PASS), Auth MVP `v0.3-public.1` is verified for public source/local synthetic testing (16/16 PASS), provenance is recorded, and Drive explicitly defers product canon to GitHub. Next is Phase 3: convert the already migrated `site/` pilot source into the official GitHub Pages entry point.
 
