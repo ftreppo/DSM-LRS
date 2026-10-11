@@ -1,6 +1,6 @@
 window.SITE_I18N = {
   de: {
-    skip:"Zum Inhalt springen", navAbout:"Projekt", navHow:"So funktioniert es", navManual:"Benutzerhandbuch", navHelp:"Hilfe", publicProject:"Öffentliches Projekt",
+    skip:"Zum Inhalt springen", navAbout:"Projekt", navHow:"So funktioniert es", navCommunity:"Community", navManual:"Benutzerhandbuch", navHelp:"Hilfe", publicProject:"Öffentliches Projekt",
     heroEyebrow:"DSM-LRS · öffentlich · portabel", heroTitle:"Lernmaterialien zugänglicher machen.", heroText:"Ein offenes Projekt für verständlichere, besser strukturierte Lernmaterialien und nachvollziehbare LRS-Unterstützung im Umfeld der Deutschen Schule Mailand.", startManual:"Zum Benutzerhandbuch",
     statusTitle:"Aktueller öffentlicher Stand", statusText:"GitHub ist die kanonische Quelle für Produkt, Code, Spezifikationen und Dokumentation.",
     aboutLabel:"Was ist DSM-LRS?", aboutTitle:"Ein eigenständiges Projekt mit klaren Grenzen.", aboutText1:"DSM-LRS entwickelt Werkzeuge, Regeln und Dokumentation, die Lernmaterialien zugänglicher machen sollen. Der öffentliche Teil kann ohne GitHub-Konto gelesen werden.", aboutText2:"DSM-LRS ist kein offizielles DSM-Regelwerk. Aktuelle individuelle Vereinbarungen und die jeweils geltenden Schul- und Prüfungsregeln haben Vorrang.",
@@ -18,7 +18,7 @@ window.SITE_I18N = {
     authorityTitle:"Wichtiger Status", authorityText:"Die Quellenfrische der registrierten DSM-Leitlinie von 2015 ist noch nicht abschließend verifiziert. Deshalb erhebt diese Website keinen Anspruch, aktuelle offizielle DSM-Regeln wiederzugeben."
   },
   it: {
-    skip:"Vai al contenuto", navAbout:"Progetto", navHow:"Come funziona", navManual:"Manuale utente", navHelp:"Aiuto", publicProject:"Progetto pubblico",
+    skip:"Vai al contenuto", navAbout:"Progetto", navHow:"Come funziona", navCommunity:"Community", navManual:"Manuale utente", navHelp:"Aiuto", publicProject:"Progetto pubblico",
     heroEyebrow:"DSM-LRS · pubblico · portabile", heroTitle:"Rendere i materiali di studio più accessibili.", heroText:"Un progetto aperto per materiali didattici più chiari, meglio strutturati e per un supporto LRS trasparente nel contesto della Scuola Germanica di Milano.", startManual:"Apri il manuale utente",
     statusTitle:"Baseline pubblica attuale", statusText:"GitHub è la fonte canonica per prodotto, codice, specifiche e documentazione.",
     aboutLabel:"Che cos'è DSM-LRS?", aboutTitle:"Un progetto autonomo con confini chiari.", aboutText1:"DSM-LRS sviluppa strumenti, regole e documentazione per rendere i materiali di apprendimento più accessibili. La parte pubblica è leggibile senza un account GitHub.", aboutText2:"DSM-LRS non è un regolamento ufficiale DSM. Gli accordi individuali vigenti e le regole scolastiche o d'esame applicabili hanno sempre la precedenza.",
@@ -36,7 +36,7 @@ window.SITE_I18N = {
     authorityTitle:"Stato importante", authorityText:"La freschezza della linea guida DSM registrata del 2015 non è ancora verificata in modo conclusivo. Questo sito quindi non pretende di rappresentare le regole ufficiali DSM attualmente vigenti."
   },
   en: {
-    skip:"Skip to content", navAbout:"Project", navHow:"How it works", navManual:"User manual", navHelp:"Help", publicProject:"Public project",
+    skip:"Skip to content", navAbout:"Project", navHow:"How it works", navCommunity:"Community", navManual:"User manual", navHelp:"Help", publicProject:"Public project",
     heroEyebrow:"DSM-LRS · public · portable", heroTitle:"Make learning material easier to access.", heroText:"An open project for clearer, better-structured learning material and transparent LRS support in the context of the German School of Milan.", startManual:"Open the user manual",
     statusTitle:"Current public baseline", statusText:"GitHub is the canonical source for product, code, specifications and documentation.",
     aboutLabel:"What is DSM-LRS?", aboutTitle:"An independent project with clear boundaries.", aboutText1:"DSM-LRS develops tools, rules and documentation intended to make learning material more accessible. The public part can be read without a GitHub account.", aboutText2:"DSM-LRS is not an official DSM rulebook. Current individual arrangements and applicable school or examination rules always take precedence.",
