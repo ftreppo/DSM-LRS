@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ title or 'DSM-LRS Auth MVP' }}</title><link rel="stylesheet" href="/static/app.css"></head>
+<body><div class="shell"><header><div><b>DSM-LRS</b> <span class="tag">MVP AUTH · DATI FITTIZI</span></div>{% if user %}<div class="user"><span>{{ user.display_name }}</span><span class="muted">{{ user.primary_role }}</span><form method="post" action="/logout"><input type="hidden" name="csrf" value="{{ csrf_token }}"><button class="link">Esci</button></form></div>{% endif %}</header>
+{% if user %}<nav><a href="/dashboard">Dashboard</a>{% if 'STUDENT' in user.roles %}<a href="/student/{{ user.linked_student_id }}">Il mio profilo</a>{% endif %}{% if 'OPERATOR' in user.roles %}<a href="/operator/drafts">Operator</a>{% endif %}{% if 'LRS_ADMIN' in user.roles %}<a href="/lrs/reviews">LRS review</a>{% endif %}{% if 'DSM_COORDINATOR' in user.roles %}<a href="/dsm/overview">DSM overview</a>{% endif %}{% if 'SYSTEM_ADMIN' in user.roles %}<a href="/admin/accounts">Admin</a>{% endif %}</nav>{% endif %}
+<main>{% block content %}{% endblock %}</main></div></body></html>
