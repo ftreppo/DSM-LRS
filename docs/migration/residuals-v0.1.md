@@ -1,47 +1,75 @@
 # DSM-LRS migration residuals v0.1
 
 **Date:** 2026-10-11  
-**Status:** DL-21 remains in progress.
+**Status:** Phase 2 closed — these items are explicit holds, private state, or historical evidence and do not compete with the GitHub product canon.
 
-## Open product candidates
+## Completed migration items
 
 ### World News tests
-The existing test script is not portable yet because it uses hard-coded `/mnt/data` fixture paths and expects fixture files that are not in the repository.
+✅ Repository-portable synthetic test suite is now in `pipelines/world-news/test_world_news_weekly_pipeline_v0_1.py`.
 
-**Required before migration:** package synthetic/public fixtures and change the test to repository-relative paths.
+- no `/mnt/data` dependency;
+- no private/historical Drive fixtures required;
+- repository-relative schema loading;
+- **9/9 PASS**;
+- GitHub blob read-back exactly matches the verified local artifact.
 
 ### Auth MVP / protected pilot
-DL-21A security/publication review is complete: **REVIEW / HOLD BEFORE PUBLIC SOURCE MIGRATION**. The v0.3 package still passes 16/16 tests and contains no real credentials, but it includes a known development secret fallback, a shared demo password, and a generated SQLite demo database.
+✅ DL-21A review and DL-21B publication hardening are complete.
 
-**Required before migration:** DL-21B publication hardening — fail-closed secret configuration, explicit local-demo boundary, generated DB exclusion, repository guardrails, then regression + fresh-start verification. No live protected deployment is implied.
+Public-safe derivative:
+`auth-mvp/v0.3-public.1/`
+
+Verification:
+- **16/16 regression tests PASS**;
+- fail-closed configuration check PASS;
+- fresh empty-database demo startup PASS;
+- local configured login PASS;
+- generated runtime database excluded;
+- public contamination scan PASS.
+
+This remains **LOCAL DEMO / FICTITIOUS DATA ONLY / NOT FOR PRODUCTION**.
+
+## Explicit non-migration / hold classes
 
 ### 90_CODEX
-This area mixes current product code/specifications with task state, decisions, evidence, experiments and history.
+This area mixes project state, decisions, verification evidence, experiments and historical work.
 
-**Rule:** migrate current reusable product code/specifications selectively; keep `TASKS.md`, `PROJECT_STATE.md`, `DECISIONS.md`, checkpoints and private operational evidence outside the public repository unless deliberately sanitized.
+**Decision:** no bulk migration. Current reusable product code/specifications were migrated selectively. `TASKS.md`, `PROJECT_STATE.md`, `DECISIONS.md`, checkpoints and private evidence remain operational/private state, not public product canon.
 
-### Dashboard derived data
-Some structured DSM-rule/source files are candidates for versioned product data, but the current 2015 DSM guideline freshness gate remains unresolved.
+### Dashboard derived DSM-rule/source data
+Some structured rule/source data is technically versionable, but C13 source freshness remains unresolved.
 
-**Rule:** do not present derived 2015 rule data as current official policy until the C13 freshness review is completed.
+**Decision:** HOLD. Do not publish it as current official DSM policy until the source-freshness review passes.
 
 ### Legacy Adapter releases
-v2.2–v2.5 historical packages remain Drive evidence.
+v2.2–v2.5 historical release packages remain Drive evidence.
 
-**Decision pending:** whether to expose them as GitHub release history or retain only v2.5.1/current public baseline.
+**Decision:** retain as historical evidence for now. The current public baseline is Adapter core v2.5 with release metadata/traceability v2.5.1. Historical packages do not compete with the current GitHub canon.
 
 ### External review material
-Reviewer workspaces and feedback stay private by default. Only deliberately approved public demo/review artifacts may move.
+Reviewer workspaces, feedback and review correspondence remain private by default.
 
-## Non-product content that remains on Drive
+**Decision:** not product canon. Only a deliberately approved public review/demo artifact may be copied later.
+
+## Content that remains canonically on Google Drive
 
 - general LRS/dyslexia reference documents;
 - DSM source/reference documents;
-- personalized/protected material;
+- learning guidelines and source corpus;
+- personalized/protected documents;
 - correspondence;
-- operational drafts/approval queues/publication snapshots;
-- private migration evidence.
+- operational drafts, approval queues and publication snapshots;
+- private migration and review evidence.
 
-## Next bounded task
+## Canonical-source status
 
-**DL-21B — prepare a public-safe Auth MVP derivative** without changing the authorization contract; then rerun security scan, regression tests and local-start verification.
+Google Drive `00_START_HERE` records that:
+- GitHub is canonical for code/specifications/tests/product documentation/site source;
+- Drive remains canonical for Library/protected/operational content;
+- old Drive product copies are provenance/archive evidence;
+- no historical file was deleted.
+
+## Next
+
+**DL-30 — GitHub Pages preparation/deployment for the existing migrated pilot source.**
