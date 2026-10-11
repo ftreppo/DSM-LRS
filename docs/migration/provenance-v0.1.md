@@ -54,3 +54,45 @@ The pilot remains synthetic/demo-only. GitHub Pages deployment is intentionally 
 ## Provenance rule
 
 Public repository files may identify the previous project area and version, but should not expose private Drive IDs or access URLs. Private item-level Drive provenance remains in the private migration audit.
+
+
+## Batch 4 — Parent Prompt QUICK v0.2
+
+Previous project area: `01_WORKING / 04_LRS_AI_ADAPTER`  
+Public target: `resources/parent-prompt/v0.2/`
+
+Migrated:
+- multilingual source
+- German version
+- Italian version
+- English version
+- public README
+
+This is the generic/non-personalized parent resource. Personalized prompts remain outside the public repository.
+
+## Batch 5 — World News pipeline
+
+Previous project areas: `01_WORKING / 90_CODEX` and `03_DASHBOARD_DATA`  
+Public target: `pipelines/world-news/`
+
+Migrated:
+- architecture
+- JSON schema
+- candidate public-source allowlist
+- deterministic weekly pipeline
+- migration-boundary README
+
+Not migrated yet: the current test script, because it depends on hard-coded local fixture paths and fixture files not yet present in the public repository. Operational drafts, approval queues and accepted-publication snapshots remain Drive state.
+
+## Batch 6 — protected-core generic contracts
+
+Previous project area: `01_WORKING / 06_OPERATIONAL_PROFILES_PRIVAT`  
+Public target: `specifications/protected-core/`
+
+Migrated:
+- frozen MVP0 data contract
+- current system-evolution specification v0.7
+- generic AI ingestion template
+- boundary README
+
+Only generic contracts/specifications moved. Personalized/operational records remain in protected Drive storage.
