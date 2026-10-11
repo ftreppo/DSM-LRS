@@ -17,21 +17,64 @@
     "classification",
     "privacy_review",
     "rights_review",
-    "review_status"
+    "review_status",
+    "contributor_permission"
   ],
   "properties": {
-    "example_id": {"type": "string", "pattern": "^CAE-[0-9]{4}-[0-9]{3,}$"},
-    "source_issue": {"type": "integer", "minimum": 1},
-    "adapter_version": {"type": "string", "minLength": 1},
-    "language": {"type": "string", "minLength": 1},
-    "use_case": {"enum": ["STUDY", "HOMEWORK", "ASSESSMENT"]},
-    "subject": {"type": "string", "minLength": 1},
-    "school_stage": {"type": ["string", "null"]},
-    "objective": {"type": "string", "minLength": 1},
-    "assessed_competence": {"type": ["string", "null"]},
-    "source_material": {"type": "string", "minLength": 1},
-    "adapter_output": {"type": "string", "minLength": 1},
-    "reviewer_analysis": {"type": "string"},
+    "example_id": {
+      "type": "string",
+      "pattern": "^CAE-[0-9]{4}-[0-9]{3,}$"
+    },
+    "source_issue": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "adapter_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "language": {
+      "type": "string",
+      "minLength": 1
+    },
+    "use_case": {
+      "enum": [
+        "STUDY",
+        "HOMEWORK",
+        "ASSESSMENT"
+      ]
+    },
+    "subject": {
+      "type": "string",
+      "minLength": 1
+    },
+    "school_stage": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "objective": {
+      "type": "string",
+      "minLength": 1
+    },
+    "assessed_competence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_material": {
+      "type": "string",
+      "minLength": 1
+    },
+    "adapter_output": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewer_analysis": {
+      "type": "string"
+    },
     "classification": {
       "type": "array",
       "minItems": 1,
@@ -52,17 +95,76 @@
         ]
       }
     },
-    "privacy_review": {"enum": ["PASS", "FAIL", "REDACTION_REQUIRED"]},
-    "rights_review": {"enum": ["PASS", "FAIL", "CLARIFICATION_REQUIRED"]},
-    "review_status": {"enum": ["PENDING", "REVIEWED", "PROMOTED", "REJECTED"]},
-    "improvement_candidate_id": {"type": ["string", "null"]}
+    "privacy_review": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "REDACTION_REQUIRED"
+      ]
+    },
+    "rights_review": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "CLARIFICATION_REQUIRED"
+      ]
+    },
+    "review_status": {
+      "enum": [
+        "PENDING",
+        "REVIEWED",
+        "PROMOTED",
+        "REJECTED"
+      ]
+    },
+    "improvement_candidate_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "contributor_permission": {
+      "enum": [
+        "YES",
+        "ANALYSIS_ONLY"
+      ]
+    }
   },
   "allOf": [
     {
-      "if": {"properties": {"use_case": {"const": "ASSESSMENT"}}},
+      "if": {
+        "properties": {
+          "use_case": {
+            "const": "ASSESSMENT"
+          }
+        }
+      },
       "then": {
-        "required": ["assessed_competence"],
-        "properties": {"assessed_competence": {"type": "string", "minLength": 1}}
+        "required": [
+          "assessed_competence"
+        ],
+        "properties": {
+          "assessed_competence": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "review_status": {
+            "const": "PROMOTED"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "contributor_permission": {
+            "const": "YES"
+          }
+        }
       }
     }
   ]
