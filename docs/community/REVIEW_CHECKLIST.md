@@ -49,6 +49,7 @@ If an improvement candidate is created, add it to `IMPROVEMENT_REGISTER.md` and 
 ## E. Promotion
 
 A promoted example must:
+- be published as a public-facing page in **German → Italian → English**, in that order;
 - receive a `CAE-YYYY-NNN` ID;
 - cite its public source Issue;
 - use only public-safe content;
