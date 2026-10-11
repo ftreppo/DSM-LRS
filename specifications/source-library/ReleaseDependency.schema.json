@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:dsm-lrs:ReleaseDependency:v1",
+  "title": "ReleaseDependency",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["release_id","adapter_core_version","release_version","rule_id","source_ids","mapping_ids","test_evidence_ids","activation_status","source_state_date"],
+  "properties": {
+    "release_id": {"type": "string"},
+    "adapter_core_version": {"type": "string"},
+    "release_version": {"type": "string"},
+    "rule_id": {"type": "string"},
+    "source_ids": {"type": "array","items": {"type": "string"}},
+    "mapping_ids": {"type": "array","items": {"type": "string"}},
+    "test_evidence_ids": {"type": "array","items": {"type": "string"}},
+    "activation_status": {"type": "string"},
+    "source_state_date": {"type": "string"}
+  }
+}
