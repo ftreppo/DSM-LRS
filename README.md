@@ -18,7 +18,7 @@ The next workstream is the official GitHub Pages entry point, based on the exist
 
 - **GitHub:** public product, code, specifications, tests, documentation, release history and GitHub Pages.
 - **Google Drive:** general LRS/dyslexia reference library, DSM reference material, and protected/personalized documents.
-- **LRS Adapter:** planned as a separate public repository only after its standalone contract and independence are verified.
+- **LRS Adapter:** standalone extraction gate passed; a separate public `lrs-adapter` repository is the next canonical home for the generic Adapter.
 - **MindMap / REGIA:** coordination only; never a runtime dependency of DSM-LRS.
 
 See [the project roadmap](docs/roadmap.md), [changelog](CHANGELOG.md), and [versioning convention](docs/versioning.md).
@@ -31,7 +31,17 @@ Examples and tests must use synthetic or otherwise non-sensitive data.
 
 ## Contributions
 
-The project is currently in bootstrap. Contributions should stay within the public/product scope above and must not include protected or personal data. Repository structure and contribution workflow may evolve as the architecture is stabilized.
+### Community Adapter Lab
+
+You can contribute an anonymized Adapter result through the structured GitHub form:
+
+**[Submit an Adapter Example](https://github.com/ftreppo/DSM-LRS/issues/new?template=adapter-example.yml)**
+
+Submissions are public and must contain no personal/protected data. Raw submissions are reviewed before they can become curated examples or improvement candidates.
+
+See [Community Adapter Lab](docs/community/COMMUNITY_ADAPTER_LAB.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Code/documentation contributions should stay within the public/product scope and must not include protected or personal data.
 
 ## License
 
