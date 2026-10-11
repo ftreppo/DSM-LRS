@@ -1,6 +1,6 @@
 # DSM-LRS — GitHub / Drive Separation Roadmap v0.1
 
-**Status:** ACTIVE — Phase 2 complete; Gate G2 PASS  
+**Status:** RELEASE-READY — G2/G3/G4/G5 PASS; DL-60…DL-65 PASS; DL-66 manual tag pending  
 **Date:** 2026-10-11  
 **Owner:** DSM-LRS project  
 **Coordination:** MindMap / REGIA only; MindMap does not own or execute the DSM-LRS product.  
@@ -166,7 +166,7 @@ This workstream collects public-safe Adapter use as evidence for product improve
 | DL-65 | ✅ Canonical-source conflict audit | No active document/code/state has two authoritative homes | Zero unresolved active canon conflicts; extraction copies explicitly non-canonical | DL-60–DL-64 |
 | DL-66 | Tag first public architecture baseline | DSM-LRS public baseline released with known status and limitations | Release/tag, changelog and public page agree on version | DL-65 |
 
-**Gate G6 — Release ready: 🟡 READY FOR DL-66 TAG.** DL-60–DL-65 PASS. C13 remains an explicit source-freshness limitation and does not authorize claims of current official DSM-rule compliance. The remaining step is DL-66: create the first public architecture tag/release.
+**Gate G6 — Release ready: 🟡 READY FOR DL-66 TAG.** DL-60–DL-65 PASS. C13 is **UPDATE_REQUIRED / MANUAL DSM VERSION CHECK**: newer BLASchA/KMK authority sources from 2024/2025 are confirmed, while the current protected DSM-local guideline revision still requires verification. No current-official-rule compliance or accommodation entitlement may be inferred from the 2015 source alone. The remaining release step is DL-66.
 
 ---
 
@@ -180,7 +180,7 @@ This workstream collects public-safe Adapter use as evidence for product improve
 
 DL-60–DL-65 are complete. The connector in this session cannot create Git tags/releases, so DL-66 is the sole remaining manual release action.
 
-Phase 2 is complete. The current public/product baseline is migrated and versioned as `0.1.0-alpha.1`; World News tests are repository-portable (9/9 PASS), Auth MVP `v0.3-public.1` is verified for public source/local synthetic testing (16/16 PASS), provenance is recorded, and Drive explicitly defers product canon to GitHub. Next is Phase 3: convert the already migrated `site/` pilot source into the official GitHub Pages entry point.
+The architecture migration is complete through DL-65. GitHub Pages is live, the generic Adapter is canonical in `ftreppo/lrs-adapter`, DSM-LRS pins `0.1.0-alpha.1`, public CI is green, and the canonical-source audit has zero unresolved active ownership conflicts. C13 remains UPDATE_REQUIRED as documented in `docs/authority/c13-source-freshness-2026-10-12.md`. The sole release action is DL-66.
 
 ## Explicit non-goals
 
