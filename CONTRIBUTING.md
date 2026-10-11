@@ -1,5 +1,7 @@
 # Contributing to DSM-LRS
 
+The **Generic Community Adapter Lab is canonical in `ftreppo/lrs-adapter`**. The links below route generic Adapter examples there. DSM-LRS-specific cases may remain in this repository.
+
 DSM-LRS is an open project with a strict privacy boundary.
 
 ## Community Adapter Lab
@@ -8,7 +10,7 @@ DSM-LRS is an open project with a strict privacy boundary.
 
 Wenn du ein reales Adapter-Ergebnis beitragen möchtest, ohne Code zu ändern, verwende das strukturierte GitHub-Formular:
 
-**[Adapter-Beispiel einreichen](https://github.com/ftreppo/DSM-LRS/issues/new?template=adapter-example.yml)**
+**[Adapter-Beispiel einreichen](https://github.com/ftreppo/lrs-adapter/issues/new?template=adapter-example.yml)**
 
 Die Submission ist öffentlich.
 
@@ -27,7 +29,7 @@ Rohe Submissions werden zuerst geprüft. Sie werden nicht automatisch zu kanonis
 
 Se vuoi contribuire con un risultato reale dell'Adapter senza modificare il codice, usa il modulo GitHub strutturato:
 
-**[Invia un esempio dell'Adapter](https://github.com/ftreppo/DSM-LRS/issues/new?template=adapter-example.yml)**
+**[Invia un esempio dell'Adapter](https://github.com/ftreppo/lrs-adapter/issues/new?template=adapter-example.yml)**
 
 La submission è pubblica.
 
@@ -46,7 +48,7 @@ Pagina pubblica Community: [Community Adapter Lab](docs/community/COMMUNITY_ADAP
 
 If you want to contribute a real-world Adapter result without changing code, use the structured GitHub form:
 
-**[Submit an Adapter Example](https://github.com/ftreppo/DSM-LRS/issues/new?template=adapter-example.yml)**
+**[Submit an Adapter Example](https://github.com/ftreppo/lrs-adapter/issues/new?template=adapter-example.yml)**
 
 The submission is public.
 
