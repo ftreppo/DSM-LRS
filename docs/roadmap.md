@@ -87,14 +87,14 @@ No file should have two competing canonical homes.
 
 | ID | Task | Result | Verification / gate | Depends on |
 |---|---|---|---|---|
-| DL-30 | Port the existing pilot public page | GitHub Pages version reproduces the useful pilot content | Content comparison against pilot; no broken essential sections | G2 |
-| DL-31 | Define the public information architecture | Home / What is DSM-LRS / How it works / User Manual / Help / GitHub | Navigation works on desktop and mobile | DL-30 |
-| DL-32 | Add Welcome | New visitor can understand purpose, audience and first action | 30-second comprehension test with no project background | DL-31 |
-| DL-33 | Add Help | Common actions, limitations, troubleshooting and privacy boundary documented | At least five representative tasks can be resolved from Help | DL-31 |
-| DL-34 | Add User Manual | End-to-end user-facing guide separate from developer documentation | Fresh-user walkthrough reaches first successful use without internal MindMap knowledge | DL-31 |
+| DL-30 | ✅ Port the existing pilot public page | GitHub Pages version reproduces the useful pilot content | Content comparison against pilot; no broken essential sections | G2 |
+| DL-31 | ✅ Define the public information architecture | Home / What is DSM-LRS / How it works / User Manual / Help / GitHub | Navigation works on desktop and mobile | DL-30 |
+| DL-32 | ✅ Add Welcome | New visitor can understand purpose, audience and first action | 30-second comprehension test with no project background | DL-31 |
+| DL-33 | ✅ Add Help | Common actions, limitations, troubleshooting and privacy boundary documented | At least five representative tasks can be resolved from Help | DL-31 |
+| DL-34 | ✅ Add User Manual | End-to-end user-facing guide separate from developer documentation | Fresh-user walkthrough reaches first successful use without internal MindMap knowledge | DL-31 |
 | DL-35 | Public/no-account verification | Page and public repository work without GitHub login | Test in signed-out/incognito browser; links and downloads resolve | DL-30–DL-34 |
 
-**Gate G3 — Public UX ready:** DSM-LRS has one public entry point that does not require a GitHub account for reading.
+**Gate G3 — Public UX ready: 🟡 PENDING DL-35.** Source, IA, Welcome, Help and User Manual are complete and privacy-scanned. The GitHub Pages workflow is present; final gate requires Pages to be enabled as a GitHub Actions publishing source and the live URL to be verified signed-out.
 
 ---
 
@@ -153,7 +153,7 @@ No file should have two competing canonical homes.
 
 ## Immediate next action
 
-**DL-30 — Prepare the existing pilot source as the official GitHub Pages site.**
+**DL-35 — Enable GitHub Pages publishing and verify the live site without an account.**
 
 Phase 2 is complete. The current public/product baseline is migrated and versioned as `0.1.0-alpha.1`; World News tests are repository-portable (9/9 PASS), Auth MVP `v0.3-public.1` is verified for public source/local synthetic testing (16/16 PASS), provenance is recorded, and Drive explicitly defers product canon to GitHub. Next is Phase 3: convert the already migrated `site/` pilot source into the official GitHub Pages entry point.
 
