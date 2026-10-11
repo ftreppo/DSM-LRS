@@ -114,13 +114,19 @@ Resolved:
 
 ## Known limitation not hidden by this baseline
 
-Adapter C13 remains **REVIEW**:
-the project has not yet proven that the registered DSM guideline from 2015 is the latest/current official DSM source.
+Adapter C13 is **UPDATE_REQUIRED / MANUAL DSM VERSION CHECK**.
 
-Therefore this architecture baseline must **not** be described as proof of compliance with current official DSM rules.
+The project confirmed that current official BLASchA/KMK authority sources are newer than the registered DSM-local 2015 working source:
+- LRS/Rechnen recommendations i.d.F. 25.04.2025;
+- abschlussbezogener Nachteilsausgleich guideline dated 11.12.2024;
+- DIA-PO / Rili DIA-PO i.d.F. 27.11.2025.
+
+The current DSM public LRS page still links to a protected DSM guideline, but the protected document's current revision/version cannot be verified without DSM login.
+
+Therefore this architecture baseline must **not** be described as proof of compliance with current official DSM rules or as proof that the 2015 DSM-local text is current.
 
 ## G6 decision
 
-**G6 PASS for an architecture/public-project baseline**, with C13 recorded as an explicit source-freshness limitation.
+**G6 PASS for an architecture/public-project baseline**, with C13 recorded as **UPDATE_REQUIRED** and fail-closed for authority-dependent assessment/accommodation use until DSM-local version/alignment is confirmed.
 
 DL-66 may tag the first public architecture baseline.
