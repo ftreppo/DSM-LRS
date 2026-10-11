@@ -1,0 +1,30 @@
+{
+  "schema": "DSM_LRS_ADAPTER_RELEASE_MANIFEST_V1_PUBLIC",
+  "task": "T107",
+  "decision": "D039",
+  "release_version": "2.5.1",
+  "adapter_core_version": "2.5",
+  "conformance_manifest": "ADAPTER_CONFORMANCE_MANIFEST_v1.0",
+  "conformance_manifest_status": "CANONICAL_D038",
+  "source_state_date": "2026-09-20",
+  "source_state_basis": "T106 audit snapshot",
+  "official_source_freshness": "REVIEW_REQUIRED_BEFORE_REAL_OPERATIONAL_USE",
+  "supersedes_release": "2.5",
+  "behavior_change": "NO",
+  "pedagogical_rule_change": "NO",
+  "privacy_boundary_change": "NO",
+  "authority_change": "NO",
+  "private_storage_locators_removed": true,
+  "package_members": [
+    {"path":"DSM_LRS_ADAPTER_RELEASE_METADATA_v2.5.1.json","sha256":"ea05b12401271080f5d32fbc3dc78301eef15c8ff7555d98835deefbfb2a0b79","bytes":1172},
+    {"path":"DSM_LRS_ADAPTER_v2.5.1_CHANGELOG.md","sha256":"8b4b5d580abcb9df49c35d69bcf337bb63bd943b1c82ecc252e5b66e49b31079","bytes":1723},
+    {"path":"DSM_LRS_ADAPTER_v2.5.1_SOURCES.md","sha256":"45449feae9bd427bb2b40d7faaf3cf5dc49376fdc29cbb634740dba067fe8afc","bytes":2591},
+    {"path":"README_DSM_LRS_ADAPTER_v2.5.1.md","sha256":"5142ddd3b645c27639977b324cfdb0a055748dd1d4a279f655b671367f127934","bytes":1501},
+    {"path":"T107_CONFORMANCE_RESULTS_v0.1.json","sha256":"d05eba17c714ca79c66f63d7db865a069649b4f06560ba122def79662cdf6278","bytes":3738},
+    {"path":"core/DSM_LRS_ADAPTER_GEMINI_v2.5.txt","sha256":"d7b3504ae0c38fdbf877d63c8937fa729c72cf98b8fd4bc879f91a857c5b4202","bytes":68678},
+    {"path":"core/DSM_LRS_ADAPTER_PORTABLE_v2.5.md","sha256":"d7b3504ae0c38fdbf877d63c8937fa729c72cf98b8fd4bc879f91a857c5b4202","bytes":68678},
+    {"path":"core/DSM_LRS_ASSESSMENT_EQUIVALENCE_MATRIX_TEMPLATE_v2.5.md","sha256":"b594edb61853ebfb5170b4324334d06ee4e48134d71c428adc47c5dbae7a2ed0","bytes":851},
+    {"path":"core/DSM_LRS_OPERATIONAL_MEASURE_REGISTER_TEMPLATE_v2.5.json","sha256":"77e5baf02e1a26d9aec55261e124b33eb8cc10352b1a47eeb4f9051fb878183e","bytes":886},
+    {"path":"core/LRS_ADAPTER_DSM_v2.5.md","sha256":"bc1af0df4c48c94613bef2ee807fdc4e4af168326eb16dbf17319e95d18dddce","bytes":51802}
+  ]
+}
