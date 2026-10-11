@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dsm-lrs.invalid/schemas/world-news-1.0.json",
+  "title": "LRS News Worldwide item",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version","id","record_type","source","source_url","canonical_url","content_identity","source_country","publication_date","original_language","source_terminology","categories","original_title","content","provenance","fetched_at","approval_status","publication_status","version"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "id": {"type": "string", "pattern": "^worldnews_[a-f0-9]{12,64}$"},
+    "record_type": {"const": "external_news"},
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id","name","kind"],
+      "properties": {"id":{"type":"string"},"name":{"type":"string"},"kind":{"type":"string"}}
+    },
+    "source_url": {"type":"string","format":"uri","pattern":"^https://"},
+    "canonical_url": {"type":"string","format":"uri","pattern":"^https://"},
+    "content_identity": {
+      "type":"object", "additionalProperties":false, "required":["kind","value"],
+      "properties":{"kind":{"enum":["canonical_url","doi","pmid","publisher_id"]},"value":{"type":"string","minLength":1}}
+    },
+    "source_country": {"type":"string","pattern":"^[A-Z]{2}$"},
+    "publication_date": {"type":"string","format":"date"},
+    "original_language": {"enum":["de","it","en"]},
+    "source_terminology": {"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "categories": {
+      "type":"array", "minItems":1, "uniqueItems":true,
+      "items":{"enum":["DYSLEXIA_LRS","DYSCALCULIA","DYSORTHOGRAPHY_SPELLING","DYSGRAPHIA_WRITING","ASSISTIVE_TECH_AI","RESEARCH","SCHOOL_ACCOMMODATIONS","POLICY_LEGISLATION"]}
+    },
+    "original_title": {"type":"string","minLength":1},
+    "original_excerpt": {"type":["string","null"]},
+    "content": {
+      "type":"object", "minProperties":1, "additionalProperties":false,
+      "properties": {
+        "de":{"$ref":"#/$defs/variant"},
+        "it":{"$ref":"#/$defs/variant"},
+        "en":{"$ref":"#/$defs/variant"}
+      }
+    },
+    "provenance": {"type":"object","required":["discovery_method","metadata_hash"],"properties":{"discovery_method":{"enum":["rss","atom","official_api","deterministic_html"]},"feed_url":{"type":["string","null"]},"metadata_hash":{"type":"string","pattern":"^sha256:[a-f0-9]{64}$"}},"additionalProperties":true},
+    "fetched_at": {"type":"string","format":"date-time"},
+    "approval_status": {"enum":["DRAFT","APPROVED","REJECTED"]},
+    "publication_status": {"enum":["UNPUBLISHED","PUBLISHED","RETRACTED"]},
+    "version": {"type":"integer","minimum":1}
+  },
+  "$defs": {
+    "variant": {
+      "type":"object", "additionalProperties":false,
+      "required":["title","summary","status","provenance"],
+      "properties": {
+        "title":{"type":"string","minLength":1},
+        "summary":{"type":["string","null"]},
+        "status":{"enum":["INGESTED","DRAFT","APPROVED","REJECTED"]},
+        "provenance":{"type":"object","required":["kind"],"properties":{"kind":{"enum":["ORIGINAL_METADATA","SOURCE_SUMMARY","HUMAN_TRANSLATION_SUMMARY","AI_TRANSLATION_SUMMARY"]},"source_language":{"enum":["de","it","en"]},"model":{"type":"string"},"created_at":{"type":"string","format":"date-time"},"approved_by":{"type":"string"},"approved_at":{"type":"string","format":"date-time"}},"additionalProperties":false}
+      }
+    }
+  }
+}
