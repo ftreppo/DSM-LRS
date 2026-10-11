@@ -96,3 +96,28 @@ Migrated:
 - boundary README
 
 Only generic contracts/specifications moved. Personalized/operational records remain in protected Drive storage.
+
+
+## Batch 7 — Auth MVP v0.3-public.1
+
+Previous project area: `01_WORKING / 07_AUTH_MVP`  
+Public target: `auth-mvp/v0.3-public.1/`
+
+The original v0.3 package remains immutable Drive evidence. A public-safe derivative was created rather than copying the original verbatim.
+
+Publication hardening:
+- explicit local-demo mode;
+- required external session secret;
+- configurable demo password;
+- no password prefill;
+- generated SQLite state excluded;
+- repository ignore rules;
+- loopback-only supplied demo startup.
+
+Verification:
+- 16/16 regression tests PASS;
+- fail-closed startup PASS;
+- fresh empty-database local demo startup PASS;
+- configured login PASS;
+- public contamination scans PASS;
+- authorization/versioning modules unchanged from v0.3.
