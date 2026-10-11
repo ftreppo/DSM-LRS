@@ -1,0 +1,155 @@
+name: "Submit an Adapter Example / Beispiel einreichen / Invia un esempio"
+description: "Share an anonymized DSM-LRS / LRS Adapter result for community review and improvement."
+title: "[Adapter Example]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Community Adapter Lab
+
+        Thank you for helping improve the Adapter.
+
+        **This issue is public. Do not submit personal or protected data.**
+        Do **not** include student names, email addresses, signatures, diagnoses, PDP/Förderplan documents, clinical reports, student numbers, private correspondence, access tokens, or private Drive links.
+
+        Only share source material that you have the right to share. If the original material is copyrighted or confidential, replace it with a short synthetic/anonymized excerpt that reproduces the relevant problem.
+
+  - type: checkboxes
+    id: privacy_gate
+    attributes:
+      label: "Privacy and sharing gate / Datenschutz / Privacy"
+      options:
+        - label: "I confirm that the submission contains no personal, student, clinical, diagnostic, or protected information."
+          required: true
+        - label: "I confirm that I have the right to share the submitted material, or that I replaced it with a synthetic/anonymized equivalent."
+          required: true
+        - label: "I understand that this GitHub issue is public and may be analyzed by the DSM-LRS project."
+          required: true
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: "Language / Sprache / Lingua"
+      options:
+        - Deutsch
+        - Italiano
+        - English
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: adapter_version
+    attributes:
+      label: "Adapter version"
+      description: "Example: DSM-LRS Adapter v2.5.1 or Generic LRS Adapter v0.1"
+      placeholder: "v2.5.1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: use_case
+    attributes:
+      label: "Use case"
+      options:
+        - STUDY
+        - HOMEWORK
+        - ASSESSMENT
+    validations:
+      required: true
+
+  - type: input
+    id: subject
+    attributes:
+      label: "Subject / Fach / Materia"
+      placeholder: "e.g. History / Geschichte / Storia"
+    validations:
+      required: true
+
+  - type: input
+    id: school_stage
+    attributes:
+      label: "School stage / class — optional and non-identifying"
+      description: "Use only a broad level, never a student identity."
+      placeholder: "e.g. Grade 7 / Klasse 7"
+    validations:
+      required: false
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: "Objective / Ziel / Obiettivo"
+      description: "What was the learner supposed to do or learn?"
+      placeholder: "Describe the task objective in 1–3 sentences."
+    validations:
+      required: true
+
+  - type: textarea
+    id: assessed_competence
+    attributes:
+      label: "Assessed competence — required for ASSESSMENT"
+      description: "For STUDY/HOMEWORK write N/A."
+      placeholder: "e.g. Solve linear equations independently."
+    validations:
+      required: true
+
+  - type: textarea
+    id: original_material
+    attributes:
+      label: "Original material — anonymized / synthetic"
+      description: "Paste only the minimum excerpt needed to understand the case, or attach a public-safe file."
+      placeholder: "Original task/material..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: adapter_output
+    attributes:
+      label: "Adapter output"
+      description: "Paste the adapted result or attach a public-safe file."
+      placeholder: "Adapted output..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: worked_well
+    attributes:
+      label: "What worked well?"
+      placeholder: "What did the Adapter do correctly or usefully?"
+    validations:
+      required: false
+
+  - type: textarea
+    id: improvement
+    attributes:
+      label: "What could be improved?"
+      placeholder: "What was confusing, excessive, missing, unsafe, or not useful?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: unexpected
+    attributes:
+      label: "Unexpected behavior — optional"
+      placeholder: "Anything the Adapter did that surprised you."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: reviewed_example_permission
+    attributes:
+      label: "May we include a reviewed/anonymized version in the project examples?"
+      description: "Selecting yes allows maintainers to curate a reviewed version into examples/community/reviewed/. Attribution will follow the public GitHub contribution record unless you request otherwise."
+      options:
+        - "Yes"
+        - "No — analysis only"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: final_confirmation
+    attributes:
+      label: "Final confirmation"
+      options:
+        - label: "I understand that a submission is not automatically a canonical Adapter rule or approved example."
+          required: true
