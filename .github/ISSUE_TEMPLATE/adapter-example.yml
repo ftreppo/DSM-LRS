@@ -1,11 +1,15 @@
-name: "Adapter-Beispiel einreichen / Invia un esempio dell'Adapter / Submit an Adapter Example"
-description: "Anonymisiertes Adapter-Beispiel zur Analyse einreichen / Invia un esempio anonimizzato per l'analisi / Share an anonymized Adapter example for review"
+name: "DSM-LRS-spezifisches Beispiel / Esempio specifico DSM-LRS / DSM-LRS-specific example"
+description: "Nur DSM-LRS-spezifische Fälle; generische Adapter-Beispiele gehören in ftreppo/lrs-adapter / Solo casi specifici DSM-LRS; gli esempi generici vanno in ftreppo/lrs-adapter / DSM-LRS-specific cases only; generic examples belong in ftreppo/lrs-adapter"
 title: "[Adapter Example]: "
 body:
   - type: markdown
     attributes:
       value: |
-        # Community Adapter Lab
+        # DSM-LRS-specific Community cases
+
+        Generic Adapter submissions: https://github.com/ftreppo/lrs-adapter/issues/new?template=adapter-example.yml
+
+        This form remains only for DSM-LRS-specific cases or integrations.
 
         **DEUTSCH**
         Danke, dass du hilfst, den Adapter zu verbessern.
