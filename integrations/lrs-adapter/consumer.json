@@ -1,0 +1,10 @@
+{
+  "dependency": "lrs-adapter",
+  "repository": "https://github.com/ftreppo/lrs-adapter",
+  "pinned_version": "0.1.0-alpha.1",
+  "contract": "specifications/contract-v0.1.md",
+  "policy_pack_schema": "specifications/PolicyPack.schema.json",
+  "adapter_instruction": "adapter/LRS_ADAPTER_GENERIC_v0.1.md",
+  "dependency_direction": "DSM-LRS -> lrs-adapter",
+  "canonical": true
+}
