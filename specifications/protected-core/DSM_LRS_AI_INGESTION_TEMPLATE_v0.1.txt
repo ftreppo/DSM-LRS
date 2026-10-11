@@ -1,0 +1,58 @@
+DSM-LRS — AI INGESTION TEMPLATE v0.1
+
+PURPOSE
+Use this template to create or update an OPERATIONAL PROFILE draft.
+You may write in normal language. The AI should normalize the information.
+
+IMPORTANT
+- Do not put diagnosis, clinical scores, anamnesis or medical details into the operational workflow.
+- If the source is a PDP, use the separate private PDP flow and transfer only the resulting operational instructions.
+- Missing information must remain TO_CONFIRM.
+- The AI may propose. A human must approve before anything is committed.
+
+STUDENT
+Name:
+Existing Student ID (if known):
+
+SCHOOL
+School year:
+Class:
+
+PROFILE ACTION
+[ ] New profile
+[ ] Update existing profile
+[ ] Annual review
+[ ] Not sure
+
+OPERATIONAL INFORMATION
+Write or paste the instructions in ordinary language below.
+
+Example:
+"Instructions should be split into short steps. In mathematics, word-problem instructions may be read aloud. For written tests extra time is allowed, but I do not know the percentage yet."
+
+[PASTE / WRITE HERE]
+
+
+SUBJECT-SPECIFIC INFORMATION
+Optional. Write only when a rule applies to one subject or subject group.
+
+[PASTE / WRITE HERE]
+
+
+KNOWN CONDITIONS / LIMITS
+Optional.
+
+[PASTE / WRITE HERE]
+
+
+EXPECTED AI OUTPUT
+1. Student/class match or TO_CONFIRM.
+2. Proposed profile action.
+3. Proposed operational rules using the standard rule catalog.
+4. Missing fields.
+5. Conflicts with the current APPROVED profile, if any.
+6. Human-readable preview.
+7. Status: DRAFT / NEEDS_INFO / READY_FOR_REVIEW.
+
+DO NOT COMMIT TO THE DATABASE.
+WAIT FOR HUMAN APPROVAL.
