@@ -32,3 +32,7 @@ GitHub Pages deployment is defined in `.github/workflows/pages.yml` and publishe
 ## Public-language policy
 
 Public participant-facing pages use **German → Italian → English** in that order. Internal configuration, schemas, maintainer checklists and technical registers may remain English-only.
+
+## Deployment state
+
+GitHub Pages source enabled: **GitHub Actions** (2026-10-11).
