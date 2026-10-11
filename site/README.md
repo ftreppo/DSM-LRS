@@ -1,5 +1,7 @@
-# Public site
+# DSM-LRS public demo preview
 
-This directory will contain the GitHub Pages source derived from the existing verified static pilot.
+Static, dependency-free preview with synthetic data only. Open `index.html` directly or serve this directory with any static web server. No data is fetched and no private Drive link, authentication, tracker, analytics script, external font, cookie, or secret is included.
 
-The current pilot is synthetic-only and will be copied here only as a complete, verified batch.
+For a local server on Windows: `py -m http.server 8080 --directory D:\data\DSM-LRS\preview`.
+
+The World News cards are deliberately fictional `DEMO / SAMPLE` records. `example.org` is used as a neutral placeholder, not a source attribution.
