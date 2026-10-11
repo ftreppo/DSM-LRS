@@ -18,7 +18,7 @@ The next workstream is the official GitHub Pages entry point, based on the exist
 
 - **GitHub:** public product, code, specifications, tests, documentation, release history and GitHub Pages.
 - **Google Drive:** general LRS/dyslexia reference library, DSM reference material, and protected/personalized documents.
-- **LRS Adapter:** standalone extraction gate passed; a separate public `lrs-adapter` repository is the next canonical home for the generic Adapter.
+- **LRS Adapter:** the generic Adapter is now canonical in the independent public repository [`ftreppo/lrs-adapter`](https://github.com/ftreppo/lrs-adapter); DSM-LRS consumes it through a pinned integration contract.
 - **MindMap / REGIA:** coordination only; never a runtime dependency of DSM-LRS.
 
 See [the project roadmap](docs/roadmap.md), [changelog](CHANGELOG.md), and [versioning convention](docs/versioning.md).
@@ -33,13 +33,15 @@ Examples and tests must use synthetic or otherwise non-sensitive data.
 
 ### Community Adapter Lab
 
-**Deutsch:** [Adapter-Beispiel einreichen](https://github.com/ftreppo/DSM-LRS/issues/new?template=adapter-example.yml) — öffentlich, anonymisiert, keine persönlichen oder geschützten Daten. Eine rohe Submission wird erst nach Review zu einem kuratierten Beispiel oder Verbesserungskandidaten.
+The **generic** Community Adapter Lab is now canonical in [`ftreppo/lrs-adapter`](https://github.com/ftreppo/lrs-adapter).
 
-**Italiano:** [Invia un esempio dell'Adapter](https://github.com/ftreppo/DSM-LRS/issues/new?template=adapter-example.yml) — pubblico, anonimizzato, senza dati personali o protetti. Una submission grezza diventa un esempio curato o un candidato di miglioramento solo dopo revisione.
+**Deutsch:** [Adapter-Beispiel einreichen](https://github.com/ftreppo/lrs-adapter/issues/new?template=adapter-example.yml)
 
-**English:** [Submit an Adapter Example](https://github.com/ftreppo/DSM-LRS/issues/new?template=adapter-example.yml) — public, anonymized, and free of personal/protected data. A raw submission becomes a curated example or improvement candidate only after review.
+**Italiano:** [Invia un esempio dell'Adapter](https://github.com/ftreppo/lrs-adapter/issues/new?template=adapter-example.yml)
 
-See [Community Adapter Lab](docs/community/COMMUNITY_ADAPTER_LAB.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
+**English:** [Submit an Adapter Example](https://github.com/ftreppo/lrs-adapter/issues/new?template=adapter-example.yml)
+
+DSM-LRS may retain DSM-specific case studies and integrations; generic examples and improvement candidates belong in `lrs-adapter`.
 
 Code/documentation contributions should stay within the public/product scope and must not include protected or personal data.
 
