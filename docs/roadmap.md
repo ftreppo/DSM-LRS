@@ -143,7 +143,7 @@ This workstream collects public-safe Adapter use as evidence for product improve
 | CL-02 | Review protocol + classification model | ✅ | Community Lab doc and maintainer review checklist committed |
 | CL-03 | Reviewed-example area + structured example schema | ✅ | `examples/community/reviewed/` + JSON Schema committed |
 | CL-04 | Adapter Improvement Register | ✅ | Evidence-backed candidate register committed |
-| CL-05 | Public-site submission CTA | ✅ source / 🟡 live after DL-35 | DE/IT/EN CTA points to GitHub submission form |
+| CL-05 | ✅ Public-site submission CTA | ✅ live | DE/IT/EN CTA points to the canonical generic Community submission flow |
 | CL-06 | ✅ Move the generic Community Adapter Lab to `lrs-adapter` once DL-54/DL-55 complete | ✅ | Generic form/docs/schema/reviewed-example structure migrated; DSM-LRS retains DSM-specific cases |
 
 **Promotion rule:** submission → privacy/rights check → review/classification → reviewed example and/or improvement candidate → tests → release decision.
@@ -164,7 +164,7 @@ This workstream collects public-safe Adapter use as evidence for product improve
 | DL-63 | ✅ Fresh-developer test | Clean GitHub Actions checkouts test both repositories | lrs-adapter CI SUCCESS; DSM-LRS CI SUCCESS with 31 tests | DL-56 |
 | DL-64 | ✅ Library integration test | Provider contract positive/negative cases verified | 6/6 Library tests PASS in public CI | DL-44, DL-56 |
 | DL-65 | ✅ Canonical-source conflict audit | No active document/code/state has two authoritative homes | Zero unresolved active canon conflicts; extraction copies explicitly non-canonical | DL-60–DL-64 |
-| DL-66 | Tag first public architecture baseline | DSM-LRS public baseline released with known status and limitations | Release/tag, changelog and public page agree on version | DL-65 |
+| DL-66 | ✅ Tag first public architecture baseline | DSM-LRS and lrs-adapter public baselines released with known status and limitations | Both verified pre-releases point to exact intended commits | DL-65 |
 
 **Gate G6 — Release ready: ✅ PASS.** DL-60–DL-65 PASS. C13 is **UPDATE_REQUIRED / MANUAL DSM VERSION CHECK**: newer BLASchA/KMK authority sources from 2024/2025 are confirmed, while the current protected DSM-local guideline revision still requires verification. No current-official-rule compliance or accommodation entitlement may be inferred from the 2015 source alone. DL-66 is complete: both DSM-LRS and lrs-adapter `v0.1.0-alpha.1` pre-releases are published and verified.
 
@@ -176,11 +176,9 @@ This workstream collects public-safe Adapter use as evidence for product improve
 
 ## Immediate next action
 
-**DL-66 — Tag the first public architecture baseline.**
+**C13 — Verify the current protected DSM guideline and its alignment with current BLASchA/KMK 2024/2025 authority sources.**
 
-DL-60–DL-65 are complete. The connector in this session cannot create Git tags/releases, so DL-66 is the sole remaining manual release action.
-
-The architecture migration is complete through DL-65. GitHub Pages is live, the generic Adapter is canonical in `ftreppo/lrs-adapter`, DSM-LRS pins `0.1.0-alpha.1`, public CI is green, and the canonical-source audit has zero unresolved active ownership conflicts. C13 remains UPDATE_REQUIRED as documented in `docs/authority/c13-source-freshness-2026-10-12.md`. The sole release action is DL-66.
+The architecture/publication roadmap through G6 is complete. C13 is the only open required follow-up.
 
 ## Explicit non-goals
 
