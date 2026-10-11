@@ -94,7 +94,7 @@ No file should have two competing canonical homes.
 | DL-34 | ✅ Add User Manual | End-to-end user-facing guide separate from developer documentation | Fresh-user walkthrough reaches first successful use without internal MindMap knowledge | DL-31 |
 | DL-35 | Public/no-account verification | Page and public repository work without GitHub login | Test in signed-out/incognito browser; links and downloads resolve | DL-30–DL-34 |
 
-**Gate G3 — Public UX ready: 🟡 FINAL VISUAL CHECK.** GitHub Pages is enabled with GitHub Actions and deployment run #11 completed SUCCESS for commit `937542cba2152da73ae77f19eb956a28d85f8048`. GitHub reports the live environment URL `https://ftreppo.github.io/DSM-LRS/`. Final gate requires one signed-out/private-browser visual check.
+**Gate G3 — Public UX ready: ✅ PASS.** GitHub Pages is enabled with GitHub Actions; deployment run #11 completed SUCCESS for commit `937542cba2152da73ae77f19eb956a28d85f8048`; the live site at `https://ftreppo.github.io/DSM-LRS/` was verified successfully in a signed-out/private browser.
 
 ---
 
@@ -176,7 +176,7 @@ This workstream collects public-safe Adapter use as evidence for product improve
 
 **DL-54 — Create the public `lrs-adapter` repository.**
 
-G5 is PASS. DL-35 remains an independent manual GitHub Pages publication gate (Issue #1).
+G5 is PASS. G3 is now also PASS; GitHub Pages is live and verified.
 
 Phase 2 is complete. The current public/product baseline is migrated and versioned as `0.1.0-alpha.1`; World News tests are repository-portable (9/9 PASS), Auth MVP `v0.3-public.1` is verified for public source/local synthetic testing (16/16 PASS), provenance is recorded, and Drive explicitly defers product canon to GitHub. Next is Phase 3: convert the already migrated `site/` pilot source into the official GitHub Pages entry point.
 
