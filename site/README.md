@@ -5,6 +5,7 @@ Static, dependency-free public site for the DSM-LRS project.
 ## Pages
 
 - `index.html` — Welcome / project overview / architecture / start paths
+- `community.html` — public Community Adapter Lab page, DE → IT → EN
 - `manual.html` — multilingual User Manual
 - `help.html` — multilingual Help & troubleshooting
 - `data.js` — DE / IT / EN interface strings
@@ -27,3 +28,7 @@ The site is a public project surface, not an official DSM rulebook. Current indi
 ## Deployment
 
 GitHub Pages deployment is defined in `.github/workflows/pages.yml` and publishes only this `site/` directory.
+
+## Public-language policy
+
+Public participant-facing pages use **German → Italian → English** in that order. Internal configuration, schemas, maintainer checklists and technical registers may remain English-only.
