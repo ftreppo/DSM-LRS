@@ -11,9 +11,9 @@ The existing test script is not portable yet because it uses hard-coded `/mnt/da
 **Required before migration:** package synthetic/public fixtures and change the test to repository-relative paths.
 
 ### Auth MVP / protected pilot
-The current Auth MVP and synthetic protected-pilot artifacts remain on Drive.
+DL-21A security/publication review is complete: **REVIEW / HOLD BEFORE PUBLIC SOURCE MIGRATION**. The v0.3 package still passes 16/16 tests and contains no real credentials, but it includes a known development secret fallback, a shared demo password, and a generated SQLite demo database.
 
-**Required before migration:** security/publication review for credentials, demo identities, deployment configuration, environment assumptions and provider-specific values. No live protected deployment is implied.
+**Required before migration:** DL-21B publication hardening — fail-closed secret configuration, explicit local-demo boundary, generated DB exclusion, repository guardrails, then regression + fresh-start verification. No live protected deployment is implied.
 
 ### 90_CODEX
 This area mixes current product code/specifications with task state, decisions, evidence, experiments and history.
@@ -44,4 +44,4 @@ Reviewer workspaces and feedback stay private by default. Only deliberately appr
 
 ## Next bounded task
 
-**DL-21A — Auth MVP public-code security review** before deciding which Auth/protected-pilot artifacts belong in the public repository.
+**DL-21B — prepare a public-safe Auth MVP derivative** without changing the authorization contract; then rerun security scan, regression tests and local-start verification.
