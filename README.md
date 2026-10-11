@@ -8,9 +8,11 @@
 
 ## Status
 
-Bootstrap phase. The public GitHub repository is now the destination for versioned product material, public specifications, documentation, tests and the future GitHub Pages site.
+**Public/product canon established — baseline `0.1.0-alpha.1`.**
 
-The existing Google Drive project remains the source/library during classification and migration. No protected or personalized material is to be copied here.
+GitHub is canonical for versioned product code, specifications, tests, public documentation and site source. Google Drive remains canonical for the LRS/DSM document Library, protected/personalized material and operational state.
+
+The next workstream is the official GitHub Pages entry point, based on the existing migrated static pilot in `site/`.
 
 ## Architecture boundary
 
@@ -19,7 +21,7 @@ The existing Google Drive project remains the source/library during classificati
 - **LRS Adapter:** planned as a separate public repository only after its standalone contract and independence are verified.
 - **MindMap / REGIA:** coordination only; never a runtime dependency of DSM-LRS.
 
-See [the project roadmap](docs/roadmap.md).
+See [the project roadmap](docs/roadmap.md), [changelog](CHANGELOG.md), and [versioning convention](docs/versioning.md).
 
 ## Privacy
 
