@@ -1,39 +1,33 @@
-# LRS Adapter — generic prototype
+# Generic Adapter extraction archive
 
-Portable, provider-neutral working instruction for adapting learning material for LRS/dyslexia-related access needs.
+**Status:** NON-CANONICAL — provenance / extraction evidence only.
 
-## Current prototype
+The generic Adapter has been extracted successfully to the independent public repository:
 
-Version: `0.1.0-alpha.1`
+**https://github.com/ftreppo/lrs-adapter**
 
-Core instruction:
-- `LRS_ADAPTER_GENERIC_v0.1.md`
+Canonical generic baseline: `0.1.0-alpha.1`.
 
-Contract:
-- `../../specifications/adapter-generic/contract-v0.1.md`
+## Why this directory still exists
 
-Policy interface:
-- `../../specifications/adapter-generic/PolicyPack.schema.json`
+This directory preserves the pre-extraction proof that was used for:
+- G5 independence testing;
+- dependency audit;
+- standalone contract validation;
+- migration provenance.
 
-Synthetic fixture:
-- `fixtures/policy-pack.synthetic.json`
+It must not be maintained as a competing current copy.
 
-Conformance test:
-- `../../tests/test_generic_adapter_contract.py`
+## Canonical generic artifacts
 
-## Independence
+Use the standalone repository for:
+- Adapter instruction;
+- standalone contract;
+- PolicyPack schema;
+- fixtures;
+- tests;
+- Community Adapter Lab;
+- future generic releases.
 
-The generic Adapter:
-- does not require a specific school;
-- does not require DSM-LRS;
-- does not require MindMap or Notion;
-- does not require Google Drive;
-- does not require a specific identity/storage provider.
-
-An integrating product may supply an optional provider-neutral PolicyPack.
-
-## Status
-
-Gate G5 standalone proof: **PASS**.
-
-This directory is the staging source for the future public `lrs-adapter` repository.
+DSM-LRS consumes the standalone Adapter through:
+`integrations/lrs-adapter/`.
