@@ -1,3 +1,6 @@
+> **Generic reviewed examples are canonical in `ftreppo/lrs-adapter`.**
+> Use this DSM-LRS subtree only for reviewed DSM-specific case studies/integrations.
+
 # Reviewed Community Examples
 
 ---
