@@ -75,7 +75,7 @@ No file should have two competing canonical homes.
 |---|---|---|---|---|
 | DL-20 | ✅ Create repository structure | Minimal folders for docs, specifications, tests/examples, site and DSM integration | Repository tree matches agreed architecture and contains no private data | G1 |
 | DL-21 | 🟡 Migrate public/versionable project material | Public code/specifications/contracts move from Drive staging to GitHub | File-by-file comparison or hash/content check where practical | DL-20 |
-| DL-22 | Preserve provenance | Migrated items reference their former Drive source/version when useful | Random sample can be traced back to origin | DL-21 |
+| DL-22 | 🟡 Preserve provenance | Migrated items reference their former Drive source/version when useful | Random sample can be traced back to origin | DL-21 |
 | DL-23 | Remove obsolete duplicate canon | Drive copies that are no longer canonical are clearly marked archive/reference, not silently deleted | No ambiguous “current” copy remains in Drive | DL-21 |
 | DL-24 | Add release/change discipline | Changelog/release convention and version identifiers defined | One test change can be traced from commit to published version | DL-21 |
 
@@ -155,7 +155,7 @@ No file should have two competing canonical homes.
 
 **DL-21 — Continue bounded PRODUCT migration.**
 
-DL-20 is complete. DL-21 is in progress. Verified batches so far: (1) five Source Library JSON Schemas in `specifications/source-library/`; (2) public-safe Adapter v2.5.1 README / CHANGELOG / SOURCES plus an explicit private-traceability boundary note. All migrated files passed GitHub read-back. Continue only with content that has passed privacy/security inspection.
+DL-20 is complete. DL-21 and DL-22 are in progress. Verified migrations so far: (1) five Source Library JSON Schemas; (2) complete Adapter core v2.5 plus public-safe v2.5.1 release documentation/conformance with sanitized public traceability; (3) the verified synthetic public pilot source under `site/`. Public provenance is recorded in [docs/migration/provenance-v0.1.md](./migration/provenance-v0.1.md). Continue only with content that has passed privacy/security inspection.
 
 ## Explicit non-goals
 
