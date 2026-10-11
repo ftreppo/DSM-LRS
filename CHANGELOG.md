@@ -2,6 +2,19 @@
 
 All notable public/product changes to DSM-LRS are recorded here.
 
+## Unreleased
+
+### Public site
+- converted the static pilot into the official public project landing-page source;
+- added DE / IT / EN Welcome and architecture explanation;
+- added multilingual User Manual;
+- added multilingual Help & troubleshooting;
+- added privacy and authority/source-freshness boundaries;
+- added GitHub Pages workflow publishing only `site/`;
+- completed static syntax/i18n/privacy scans.
+
+**Pending:** one-time GitHub Pages enablement and signed-out live verification (DL-35).
+
 Versioning follows the project convention in [docs/versioning.md](docs/versioning.md).
 
 ## 0.1.0-alpha.1 — 2026-10-11
