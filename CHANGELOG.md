@@ -15,6 +15,14 @@ All notable public/product changes to DSM-LRS are recorded here.
 
 **Pending:** one-time GitHub Pages enablement and signed-out live verification (DL-35).
 
+### Generic Adapter extraction
+- classified Adapter components into GENERIC vs DSM-SPECIFIC;
+- defined the standalone generic Adapter contract and provider-neutral PolicyPack;
+- added generic portable prototype and synthetic PolicyPack fixture;
+- dependency audit: zero mandatory DSM-LRS/MindMap/Notion/Drive dependencies;
+- standalone contract/conformance checks: **8/8 PASS**;
+- Gate G5 PASS: separate `lrs-adapter` repository may now be created.
+
 ### Library architecture
 - formalized the Google Drive Library taxonomy without moving existing folders;
 - added provider-neutral Library contract and configuration schema;
