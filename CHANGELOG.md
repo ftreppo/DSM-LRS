@@ -4,6 +4,15 @@ All notable public/product changes to DSM-LRS are recorded here.
 
 ## Unreleased
 
+### C13 source-freshness research
+- current DSM public LRS page still links to a protected DSM guideline;
+- project Library contains the registered DSM-local guideline adopted 12.02.2015;
+- targeted Library search found no newer DSM-local copy;
+- current official BLASchA/KMK sources are materially newer (2024/2025);
+- C13 status changed from REVIEW to **UPDATE_REQUIRED / MANUAL DSM VERSION CHECK**;
+- assessment/accommodation entitlement must remain fail-closed unless current authorized context explicitly permits the measure;
+- detailed evidence: `docs/authority/c13-source-freshness-2026-10-12.md`.
+
 ### G6 verification
 - cross-repository canonical boundary audit: PASS;
 - privacy/publication scan: PASS;
@@ -13,7 +22,7 @@ All notable public/product changes to DSM-LRS are recorded here.
 - DSM-LRS CI results: 16 Auth + 9 World News + 6 Library = **31 tests PASS**;
 - canonical-source conflict audit: zero unresolved active conflicts;
 - release blocker remaining: create Git tag/release for `v0.1.0-alpha.1`;
-- C13 remains REVIEW and explicitly limits claims about current official DSM rules.
+- C13 researched on 2026-10-12: **UPDATE_REQUIRED / MANUAL DSM VERSION CHECK**; current BLASchA LRS recommendations are i.d.F. 25.04.2025, the abschlussbezogener Nachteilsausgleich guideline is dated 11.12.2024, and current DIA-PO/Rili DIA-PO are i.d.F. 27.11.2025; the protected DSM-local guideline version still requires manual verification.
 
 
 ### Standalone lrs-adapter extraction complete
