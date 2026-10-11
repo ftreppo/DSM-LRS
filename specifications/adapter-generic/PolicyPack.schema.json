@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lrs-adapter.invalid/schemas/policy-pack-v0.1.json",
+  "title": "Generic LRS Adapter PolicyPack",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "pack_id", "authority_label", "measures"],
+  "properties": {
+    "version": {"const": "0.1"},
+    "pack_id": {"type": "string", "minLength": 1},
+    "authority_label": {"type": "string", "minLength": 1},
+    "scope": {"type": "string"},
+    "measures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["measure_id", "action", "status", "scope"],
+        "properties": {
+          "measure_id": {"type": "string", "minLength": 1},
+          "action": {"type": "string", "minLength": 1},
+          "value": {},
+          "status": {"enum": ["CONFIRMED", "POSSIBLE_IF_CONFIRMED", "DO_NOT_APPLY", "TO_CLARIFY"]},
+          "scope": {"type": "string"},
+          "basis": {"type": "string"},
+          "review_date": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "assessment_gates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["gate_id", "condition", "effect"],
+        "properties": {
+          "gate_id": {"type": "string"},
+          "condition": {"type": "string"},
+          "effect": {"type": "string"}
+        }
+      }
+    }
+  }
+}
