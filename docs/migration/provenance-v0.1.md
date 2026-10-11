@@ -121,3 +121,28 @@ Verification:
 - configured login PASS;
 - public contamination scans PASS;
 - authorization/versioning modules unchanged from v0.3.
+
+
+## Batch 8 — World News portable regression suite
+
+Previous project test: hard-coded `/mnt/data` and historical Drive snapshot fixtures.  
+Public target: `pipelines/world-news/test_world_news_weekly_pipeline_v0_1.py`
+
+The public test was refactored to use repository-relative schema loading and fully synthetic in-test baselines/fixtures.
+
+Verification:
+- **9/9 PASS**;
+- dedup order DOI/stable ID → canonical URL → source/title/date retained;
+- DRAFT-first and human/admin approval boundary retained;
+- prior-run dedup and prohibited-private-key checks retained;
+- GitHub blob SHA exactly matches the verified local artifact.
+
+## Phase 2 canon closeout
+
+On 2026-10-11, Drive `00_START_HERE` was updated to state explicitly:
+- GitHub is canonical for DSM-LRS product/code/specifications/tests/public-site source;
+- corresponding Drive product copies are provenance/archive evidence;
+- Drive remains canonical for Library, protected and operational content;
+- no historical content was deleted.
+
+Public baseline version: `0.1.0-alpha.1`.
