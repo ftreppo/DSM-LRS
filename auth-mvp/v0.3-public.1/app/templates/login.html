@@ -1,0 +1,6 @@
+{% extends 'base.html' %}{% block content %}
+<section class="card login"><h1>Accesso demo</h1><p class="muted">Autenticazione server-side del prototipo. Gli account sono esclusivamente fittizi. Usa la password demo locale configurata all’avvio; le password sono memorizzate solo come hash PBKDF2 nel database locale.</p>{% if error %}<div class="error">{{ error }}</div>{% endif %}
+<form method="post"><input type="hidden" name="csrf" value="{{ csrf_token }}"><label>Username<input name="username" required autofocus></label><label>Password<input name="password" type="password" autocomplete="current-password" required></label><button>Entra</button></form>
+<h2>Personas demo</h2><div class="accounts">{% for a in accounts %}<div><code>{{ a.username }}</code><small>{{ a.primary_role }}</small><span>{{ a.display_name }}</span></div>{% endfor %}</div>
+<p class="notice">Nessun account pubblico: la parte pubblica resta fuori da questo MVP.</p></section>
+{% endblock %}
