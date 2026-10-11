@@ -155,7 +155,7 @@ No file should have two competing canonical homes.
 
 **DL-21 — Continue bounded PRODUCT migration.**
 
-DL-20 is complete. The first verified DL-21 batch migrated five Source Library JSON Schemas into `specifications/source-library/` with successful GitHub read-back. Continue only with content that has passed privacy/security inspection.
+DL-20 is complete. DL-21 is in progress. Verified batches so far: (1) five Source Library JSON Schemas in `specifications/source-library/`; (2) public-safe Adapter v2.5.1 README / CHANGELOG / SOURCES plus an explicit private-traceability boundary note. All migrated files passed GitHub read-back. Continue only with content that has passed privacy/security inspection.
 
 ## Explicit non-goals
 
