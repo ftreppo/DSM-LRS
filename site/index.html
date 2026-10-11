@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DSM-LRS public demo preview">
+    <meta name="color-scheme" content="light">
+    <title>DSM-LRS — Demo Preview</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#top" aria-label="DSM-LRS Startseite">DSM<span>–</span>LRS</a>
+        <div class="header-actions">
+          <span class="demo-pill" data-i18n="demoPill"></span>
+          <div class="language-switcher" role="group" aria-label="Sprache wählen">
+            <button type="button" data-language="de" aria-pressed="true">DE</button>
+            <button type="button" data-language="it" aria-pressed="false">IT</button>
+            <button type="button" data-language="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero">
+        <div class="shell hero-grid">
+          <div>
+            <p class="eyebrow" data-i18n="eyebrow"></p>
+            <h1 data-i18n="heroTitle"></h1>
+            <p class="lede" data-i18n="heroText"></p>
+          </div>
+          <aside class="access-card" aria-label="Zugangsmodell">
+            <p class="card-label" data-i18n="accessModel"></p>
+            <div class="roles" id="roles"></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section shell" aria-labelledby="updates-title">
+        <div class="section-heading">
+          <div><p class="eyebrow" data-i18n="todayLabel"></p><h2 id="updates-title" data-i18n="updatesTitle"></h2></div>
+          <span class="section-note" data-i18n="syntheticNote"></span>
+        </div>
+        <div class="card-grid" id="updates"></div>
+      </section>
+
+      <section class="section muted-section">
+        <div class="shell split-grid">
+          <div>
+            <div class="section-heading compact"><div><p class="eyebrow" data-i18n="datesLabel"></p><h2 data-i18n="datesTitle"></h2></div></div>
+            <div class="event-list" id="events"></div>
+          </div>
+          <div>
+            <div class="section-heading compact"><div><p class="eyebrow" data-i18n="documentsLabel"></p><h2 data-i18n="documentsTitle"></h2></div></div>
+            <div class="document-list" id="documents"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell" aria-labelledby="knowledge-title">
+        <div class="knowledge-panel">
+          <div><p class="eyebrow" data-i18n="knowledgeLabel"></p><h2 id="knowledge-title" data-i18n="knowledgeTitle"></h2><p data-i18n="knowledgeText"></p></div>
+          <a class="button-link" href="#about" data-i18n="knowledgeAction"></a>
+        </div>
+      </section>
+
+      <section class="section world-news" aria-labelledby="news-title">
+        <div class="shell">
+          <div class="section-heading">
+            <div><p class="eyebrow" data-i18n="worldNewsLabel"></p><h2 id="news-title" data-i18n="worldNewsTitle"></h2><p data-i18n="worldNewsText"></p></div>
+            <span class="external-badge" data-i18n="externalBadge"></span>
+          </div>
+          <div class="filter-bar" role="group" aria-label="News filtern" id="news-filters"></div>
+          <div class="news-grid" id="news-items" aria-live="polite"></div>
+          <p class="external-notice" data-i18n="externalNotice"></p>
+        </div>
+      </section>
+
+      <section id="about" class="section shell about" aria-labelledby="about-title">
+        <p class="eyebrow" data-i18n="aboutLabel"></p><h2 id="about-title" data-i18n="aboutTitle"></h2><p data-i18n="aboutText"></p>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="shell"><span>DSM–LRS</span><span data-i18n="footerText"></span></div></footer>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
