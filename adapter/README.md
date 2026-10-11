@@ -35,7 +35,7 @@ The DSM-specific historical/current project baseline remains:
 - Behavior change from core v2.5: **NO**
 - Privacy-boundary change: **NO**
 - Authority change: **NO**
-- Official-source freshness: **REVIEW REQUIRED BEFORE REAL OPERATIONAL USE**
+- Official-source freshness: **UPDATE_REQUIRED / MANUAL DSM VERSION CHECK**
 
 Core DSM-specific files remain in [core/](core/). Release notes and public traceability remain in [releases/v2.5.1/](releases/v2.5.1/).
 
@@ -51,4 +51,4 @@ DSM-LRS consumer declaration:
 
 ## Authority status
 
-Neither the generic Adapter nor DSM-LRS is an official DSM rulebook. The v2.5.1 DSM traceability snapshot does not prove that the registered 2015 DSM guideline is the latest applicable official source. No current-official-rule compliance claim should be made until that freshness check passes.
+Neither the generic Adapter nor DSM-LRS is an official DSM rulebook. C13 research on 2026-10-12 found materially newer BLASchA/KMK authority sources from 2024/2025 than the registered DSM-local 2015 working source. The current protected DSM guideline version still requires manual verification. No current-official-rule compliance claim or accommodation entitlement may be inferred from the 2015 source alone.
