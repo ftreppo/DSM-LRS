@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:dsm-lrs:ObservationRecord:v1",
+  "title": "ObservationRecord",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["observation_id","origin","related_rule_ids","related_release","summary","evidence_locator","severity_or_review_priority","review_signal_status","human_analysis_status","created_at"],
+  "properties": {
+    "observation_id": {"type": "string"},
+    "origin": {"enum": ["TEST","ADAPTER_USE","TEACHER","REVIEWER","TECHNICAL"]},
+    "related_rule_ids": {"type": "array","items": {"type": "string"}},
+    "related_release": {"type": ["string","null"]},
+    "summary": {"type": "string"},
+    "evidence_locator": {"type": "string"},
+    "severity_or_review_priority": {"type": "string"},
+    "review_signal_status": {"type": "string"},
+    "human_analysis_status": {"type": "string"},
+    "created_at": {"type": "string"}
+  }
+}
