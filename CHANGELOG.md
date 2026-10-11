@@ -4,6 +4,18 @@ All notable public/product changes to DSM-LRS are recorded here.
 
 ## Unreleased
 
+### G6 verification
+- cross-repository canonical boundary audit: PASS;
+- privacy/publication scan: PASS;
+- signed-out public UX verification: PASS;
+- lrs-adapter standalone CI: SUCCESS;
+- DSM-LRS fresh-checkout CI: SUCCESS;
+- DSM-LRS CI results: 16 Auth + 9 World News + 6 Library = **31 tests PASS**;
+- canonical-source conflict audit: zero unresolved active conflicts;
+- release blocker remaining: create Git tag/release for `v0.1.0-alpha.1`;
+- C13 remains REVIEW and explicitly limits claims about current official DSM rules.
+
+
 ### Standalone lrs-adapter extraction complete
 - created public `ftreppo/lrs-adapter` repository with Apache-2.0;
 - migrated generic Adapter instruction, contract, PolicyPack schema, synthetic fixture and tests;
@@ -79,5 +91,5 @@ The World News test portability change is represented by commit `db00b9f14aa38ab
 
 ### Known gates
 - Adapter C13 source-freshness remains REVIEW before any current-official-DSM-rule compliance claim.
-- GitHub Pages deployment/public no-account verification is not yet complete.
+- GitHub Pages deployment/public no-account verification: PASS.
 - Real identities, real protected data and protected deployment remain outside this baseline.
