@@ -1,0 +1,33 @@
+{
+  "version": "0.1",
+  "pack_id": "synthetic-school-demo",
+  "authority_label": "Synthetic School Policy — TEST ONLY",
+  "scope": "synthetic learner / demonstration",
+  "measures": [
+    {
+      "measure_id": "M-001",
+      "action": "INCREASE_SPACING",
+      "value": true,
+      "status": "CONFIRMED",
+      "scope": "STUDY|HOMEWORK|ASSESSMENT",
+      "basis": "synthetic approved measure",
+      "review_date": null
+    },
+    {
+      "measure_id": "M-002",
+      "action": "TTS",
+      "value": "ALLOWED_WHEN_READING_NOT_ASSESSED",
+      "status": "POSSIBLE_IF_CONFIRMED",
+      "scope": "ASSESSMENT",
+      "basis": "synthetic policy example",
+      "review_date": null
+    }
+  ],
+  "assessment_gates": [
+    {
+      "gate_id": "G-READING",
+      "condition": "reading_is_assessed_competence",
+      "effect": "do_not_apply_semantic_or_reading_assistance_without_confirmed_authority"
+    }
+  ]
+}
