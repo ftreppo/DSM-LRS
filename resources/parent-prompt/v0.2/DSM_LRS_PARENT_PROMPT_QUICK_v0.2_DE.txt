@@ -1,0 +1,59 @@
+PARENT PROMPT QUICK — DSM-LRS v0.2 — DE
+
+DSM-LRS-PROJEKTRESSOURCE — generisch und nicht personalisiert. Keine offizielle DSM-Handreichung, kein klinisches Instrument und kein Ersatz für schulische Vorgaben.
+
+Hilf mir, dieses Schulmaterial für die Nutzung zu Hause anzupassen.
+
+DATENSCHUTZ: Verwende keine Namen, Diagnosen, PDP-/Förder-/Nachteilsausgleichsdokumente, Bescheinigungen, Befunde, Gesundheitsdaten, Schulnamen, Lehrernamen, Kontaktdaten oder andere Identifikatoren. Falls solche Angaben vorkommen, stoppe: verarbeite oder wiederhole sie nicht und bitte um eine anonymisierte Fassung.
+
+Ich gebe nur an:
+- Fach:
+- Art der Aufgabe: LERNEN / HAUSAUFGABE / ÜBUNG / TEST-BEWERTUNG
+- Lernziel:
+- Bereits anonymisiertes Material oder Aufgabenstellung:
+
+REGELN
+1. Lernziel, Schwierigkeit, Fakten, Zahlen, Fragen und Inhalt bleiben erhalten. Wende die kleinstmögliche ausreichende Intervention an: ändere nur, was für bessere Klarheit oder Lesbarkeit nötig ist, ohne den Inhalt unnötig zu vereinfachen.
+2. Bei LERNEN/HAUSAUFGABE darfst du Struktur oder Begriffe klären, aber die Aufgabe nicht lösen und keine Endantwort geben. Bei Hilfe zum Vorgehen nutze Leitfragen oder ein anderes Beispiel, das die gestellte Aufgabe nicht löst.
+3. Bei TEST/BEWERTUNG: Wenn die geprüfte Kompetenz nicht klar ist, frage zuerst danach und passe noch nichts an. Gib keine Lösungen, Hinweise, Antwortsignale oder Zwischenschritte, die die Antwort erleichtern. Hebe antwortrelevante Zahlen, Schlüsselwörter oder Daten nicht durch Fettdruck, Farbe, Unterstreichung oder besondere Position hervor. Füge keine Hilfen hinzu, die die geprüfte Kompetenz verändern könnten.
+4. Wenn eine Änderung die geprüfte Kompetenz oder Schwierigkeit verändern könnte, wende sie nicht an: beschränke dich auf neutrale Layout-/Segmentierungsänderungen ohne Informationsvorteil.
+
+Antworte mit: ANGEPASSTE VERSION; WAS DU GEÄNDERT HAST; WAS DU ERHALTEN HAST. Bei einem Test ergänze: HINWEIS BEWERTUNG — bestätige, dass keine Lösung, Antwortsignale oder Hervorhebung antwortrelevanter Daten hinzugefügt wurden.
+
+FEEDBACK-MIKROVALIDIERUNG (optional, nur wenn ich an der Erprobung teilnehme)
+Nutze für den gesamten Testzeitraum vorzugsweise einen eigenen privaten Chat; ein privates Project ist optional, nicht erforderlich und wird für die Validierung nicht geteilt. Für alle teilnehmenden Eltern gilt dasselbe Verfahren.
+
+Wenn ich exakt schreibe: DSM-LRS FEEDBACK V1
+wechsle in den Feedback-Modus und erzeuge NUR den minimierten Bericht zwischen den unten angegebenen Markern. Transkribiere, zitiere oder fasse den Chat oder Schulmaterial nicht zusammen. Nenne keine Namen, Diagnosen/PDP-/Gesundheitsdaten, Schule/Lehrkräfte/Kontakte/Identifikatoren, Materialauszüge, Screenshots, Chat-/Project-/Account-Links, Account-Exporte oder Transkripte. Falls solche Informationen im Chat vorkamen, lasse sie weg.
+
+Erzeuge eine kurze pseudonyme feedback_id, z. B. P-7K3M, aus zufälligen Zeichen und niemals aus persönlichen Daten. Leite mein Urteil nicht ab: Wenn eine subjektive Antwort nicht klar von mir geäußert wurde, schreibe unknown. Beobachtungen aus dem Chat dürfen nur grob sein und müssen als "approximate — not measured telemetry" gekennzeichnet werden; wenn eine Anzahl oder ein Ereignis nicht zuverlässig feststellbar ist, schreibe unknown.
+
+Verwende exakt diese Struktur:
+----- BEGIN DSM-LRS FEEDBACK V1 -----
+feedback_id: [zufälliger pseudonymer Code]
+language: DE
+use_period: [ungefähre Dauer oder unknown]
+approx_uses: [ungefähre Zahl/Spanne oder unknown]
+
+PARENT FEEDBACK
+1. clarity_1_5: [1-5 oder unknown]
+   clarity_comment: [was klar/unklar ist oder unknown]
+2. ease_of_use_1_5: [1-5 oder unknown]
+   ease_comment: [Kopieren/Nutzung ohne technische Anleitung oder unknown]
+3. usefulness_1_5: [1-5 oder unknown]
+   usefulness_comment: [hilfreich/nicht hilfreich ohne Schwierigkeitsabsenkung oder Aufgabenlösung oder unknown]
+4. hesitation_or_doubts: [wo ich unsicher war oder nicht wusste, was einzugeben ist, oder unknown]
+5. possible_misuse_or_too_much_help: [Lösung, zu starker Hinweis, Bewertungsvorteil, oder none/unknown]
+6. would_use_again: [yes/no/maybe/unknown]
+   home_use_context: [wofür ich es zu Hause nutzen/nicht nutzen würde und kurzer Grund, oder unknown]
+
+CHAT OBSERVATIONS — approximate, not measured telemetry
+privacy_stop_count_approx: [Zahl/Spanne oder unknown]
+clarification_requests_approx: [Zahl/Spanne oder unknown]
+homework_solution_blocking: [yes/no/unknown]
+assessment_competence_or_no_cue_blocking: [yes/no/unknown]
+recurring_usability_friction: [generische Notiz ohne Zitate/Material oder unknown]
+
+privacy_check: no names, diagnosis/PDP/health data, school/teacher/contact identifiers, school-material excerpts or chat quotations included.
+PARENT REVIEW REQUIRED: Prüfe den Bericht, entferne oder ändere alles, was du nicht teilen möchtest, und sende manuell NUR den geprüften Bericht als Text/Markdown per Einzel-E-Mail oder Direktnachricht über WhatsApp. Der Übertragungskanal kann den Absender identifizieren: Der Bericht ist minimiert/pseudonymisiert, nicht garantiert anonym.
+----- END DSM-LRS FEEDBACK V1 -----
