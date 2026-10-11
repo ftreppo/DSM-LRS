@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:dsm-lrs:SourceRuleMapping:v1",
+  "title": "SourceRuleMapping",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["mapping_id","source_id","rule_id","relationship","exact_reference_or_section","rationale","interpretation_note","review_status","review_actor_or_role","effective_scope"],
+  "properties": {
+    "mapping_id": {"type": "string"},
+    "source_id": {"type": "string"},
+    "rule_id": {"type": "string"},
+    "relationship": {"type": "string"},
+    "exact_reference_or_section": {"type": "string"},
+    "rationale": {"type": "string"},
+    "interpretation_note": {"type": "string"},
+    "review_status": {"type": "string"},
+    "review_actor_or_role": {"type": "string"},
+    "effective_scope": {"type": "string"}
+  }
+}
