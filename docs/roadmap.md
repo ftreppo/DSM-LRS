@@ -73,8 +73,8 @@ No file should have two competing canonical homes.
 
 | ID | Task | Result | Verification / gate | Depends on |
 |---|---|---|---|---|
-| DL-20 | Create repository structure | Minimal folders for docs, specifications, tests/examples, site and DSM integration | Repository tree matches agreed architecture and contains no private data | G1 |
-| DL-21 | Migrate public/versionable project material | Public code/specifications/contracts move from Drive staging to GitHub | File-by-file comparison or hash/content check where practical | DL-20 |
+| DL-20 | ✅ Create repository structure | Minimal folders for docs, specifications, tests/examples, site and DSM integration | Repository tree matches agreed architecture and contains no private data | G1 |
+| DL-21 | 🟡 Migrate public/versionable project material | Public code/specifications/contracts move from Drive staging to GitHub | File-by-file comparison or hash/content check where practical | DL-20 |
 | DL-22 | Preserve provenance | Migrated items reference their former Drive source/version when useful | Random sample can be traced back to origin | DL-21 |
 | DL-23 | Remove obsolete duplicate canon | Drive copies that are no longer canonical are clearly marked archive/reference, not silently deleted | No ambiguous “current” copy remains in Drive | DL-21 |
 | DL-24 | Add release/change discipline | Changelog/release convention and version identifiers defined | One test change can be traced from commit to published version | DL-21 |
@@ -153,9 +153,9 @@ No file should have two competing canonical homes.
 
 ## Immediate next action
 
-**DL-20 — Create repository structure.**
+**DL-21 — Continue bounded PRODUCT migration.**
 
-Phase 1 inventory/classification is recorded in [docs/migration/inventory-classification-v0.1.md](./migration/inventory-classification-v0.1.md).
+DL-20 is complete. The first verified DL-21 batch migrated five Source Library JSON Schemas into `specifications/source-library/` with successful GitHub read-back. Continue only with content that has passed privacy/security inspection.
 
 ## Explicit non-goals
 
