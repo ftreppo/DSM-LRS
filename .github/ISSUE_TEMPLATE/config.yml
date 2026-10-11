@@ -1,8 +1,8 @@
 blank_issues_enabled: true
 contact_links:
-  - name: "DSM-LRS User Manual"
-    url: "https://ftreppo.github.io/DSM-LRS/manual.html"
-    about: "Read the public user manual before submitting an example."
-  - name: "DSM-LRS Help"
-    url: "https://ftreppo.github.io/DSM-LRS/help.html"
-    about: "Privacy, troubleshooting and usage guidance."
+  - name: "Community Adapter Lab"
+    url: "https://github.com/ftreppo/DSM-LRS/blob/main/docs/community/COMMUNITY_ADAPTER_LAB.md"
+    about: "Read the submission and review model before contributing an Adapter example."
+  - name: "DSM-LRS contribution guide"
+    url: "https://github.com/ftreppo/DSM-LRS/blob/main/CONTRIBUTING.md"
+    about: "Privacy, rights and contribution boundaries."
