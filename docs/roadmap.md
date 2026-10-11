@@ -118,16 +118,16 @@ No file should have two competing canonical homes.
 
 | ID | Task | Result | Verification / gate | Depends on |
 |---|---|---|---|---|
-| DL-50 | Inventory Adapter-specific components | Generic engine separated conceptually from DSM rules/integration | Component map marks GENERIC vs DSM-SPECIFIC | G2 |
-| DL-51 | Define the Adapter standalone contract | Inputs, outputs, configuration, error model and extension points specified | Contract can be understood without reading DSM-LRS or MindMap docs | DL-50 |
-| DL-52 | Dependency audit | Identify every dependency on DSM-LRS, Google Drive, MindMap, Notion, user-specific paths and private infrastructure | Generic Adapter has zero mandatory dependency on MindMap/Notion/personal infrastructure; remaining DSM dependency is via explicit interface/config | DL-51 |
-| DL-53 | Standalone proof inside DSM-LRS tree | Adapter runs against fixtures/mock profile and generic library data | Clean test passes without DSM project state or private Drive access | DL-52 |
+| DL-50 | ✅ Inventory Adapter-specific components | Generic engine separated conceptually from DSM rules/integration | Component map marks GENERIC vs DSM-SPECIFIC | G2 |
+| DL-51 | ✅ Define the Adapter standalone contract | Inputs, outputs, configuration, error model and extension points specified | Contract can be understood without reading DSM-LRS or MindMap docs | DL-50 |
+| DL-52 | ✅ Dependency audit | Identify every dependency on DSM-LRS, Google Drive, MindMap, Notion, user-specific paths and private infrastructure | Generic Adapter has zero mandatory dependency on MindMap/Notion/personal infrastructure; remaining DSM dependency is via explicit interface/config | DL-51 |
+| DL-53 | ✅ Standalone proof inside DSM-LRS tree | Adapter runs against fixtures/mock profile and generic library data | Clean test passes without DSM project state or private Drive access | DL-52 |
 | DL-54 | **Create public `lrs-adapter` repository only after G5 passes** | Independent repository exists | Public visibility and clean initial history verified | DL-53 |
 | DL-55 | Migrate generic Adapter code/contracts/tests | `lrs-adapter` becomes canonical for generic Adapter | Tests pass in new repo; no DSM-specific secrets/configuration copied | DL-54 |
 | DL-56 | Reconnect DSM-LRS as consumer | DSM-LRS consumes Adapter through versioned dependency/interface | DSM-LRS test suite passes against pinned Adapter version | DL-55 |
 | DL-57 | Independent portability test | Third party can use Adapter without DSM-LRS | Fresh clone/install/use from README succeeds with synthetic data | DL-55 |
 
-**Gate G5 — Adapter extraction gate:** DL-51–DL-53 must pass before creating `lrs-adapter`.
+**Gate G5 — Adapter extraction gate: ✅ PASS.** Generic/DSM component inventory, provider-neutral contract, dependency audit and standalone proof are complete. The generic portable artifact has zero mandatory DSM-LRS/MindMap/Notion/Drive dependencies; contract checks pass 8/8. Creation of `lrs-adapter` is now authorized under DL-54.
 
 ---
 
@@ -153,9 +153,9 @@ No file should have two competing canonical homes.
 
 ## Immediate next action
 
-**DL-50 — Inventory Adapter-specific components and classify GENERIC vs DSM-SPECIFIC.**
+**DL-54 — Create the public `lrs-adapter` repository.**
 
-DL-35 remains an independent manual publication gate (Issue #1) and does not block Adapter architecture work.
+G5 is PASS. DL-35 remains an independent manual GitHub Pages publication gate (Issue #1).
 
 Phase 2 is complete. The current public/product baseline is migrated and versioned as `0.1.0-alpha.1`; World News tests are repository-portable (9/9 PASS), Auth MVP `v0.3-public.1` is verified for public source/local synthetic testing (16/16 PASS), provenance is recorded, and Drive explicitly defers product canon to GitHub. Next is Phase 3: convert the already migrated `site/` pilot source into the official GitHub Pages entry point.
 
