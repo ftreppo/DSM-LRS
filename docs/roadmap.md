@@ -166,7 +166,7 @@ This workstream collects public-safe Adapter use as evidence for product improve
 | DL-65 | ✅ Canonical-source conflict audit | No active document/code/state has two authoritative homes | Zero unresolved active canon conflicts; extraction copies explicitly non-canonical | DL-60–DL-64 |
 | DL-66 | Tag first public architecture baseline | DSM-LRS public baseline released with known status and limitations | Release/tag, changelog and public page agree on version | DL-65 |
 
-**Gate G6 — Release ready: 🟡 READY FOR DL-66 TAG.** DL-60–DL-65 PASS. C13 is **UPDATE_REQUIRED / MANUAL DSM VERSION CHECK**: newer BLASchA/KMK authority sources from 2024/2025 are confirmed, while the current protected DSM-local guideline revision still requires verification. No current-official-rule compliance or accommodation entitlement may be inferred from the 2015 source alone. The remaining release step is DL-66.
+**Gate G6 — Release ready: ✅ PASS.** DL-60–DL-65 PASS. C13 is **UPDATE_REQUIRED / MANUAL DSM VERSION CHECK**: newer BLASchA/KMK authority sources from 2024/2025 are confirmed, while the current protected DSM-local guideline revision still requires verification. No current-official-rule compliance or accommodation entitlement may be inferred from the 2015 source alone. DL-66 is complete: both DSM-LRS and lrs-adapter `v0.1.0-alpha.1` pre-releases are published and verified.
 
 ---
 
