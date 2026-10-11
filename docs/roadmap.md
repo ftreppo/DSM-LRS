@@ -131,6 +131,25 @@ No file should have two competing canonical homes.
 
 ---
 
+# Parallel workstream — Community Adapter Lab
+
+This workstream collects public-safe Adapter use as evidence for product improvement without allowing raw submissions to become canonical automatically.
+
+| ID | Task | Status | Verification |
+|---|---|---|---|
+| CL-01 | Structured Adapter-example Issue Form + privacy/rights gate | ✅ | Public form committed under `.github/ISSUE_TEMPLATE/adapter-example.yml` |
+| CL-02 | Review protocol + classification model | ✅ | Community Lab doc and maintainer review checklist committed |
+| CL-03 | Reviewed-example area + structured example schema | ✅ | `examples/community/reviewed/` + JSON Schema committed |
+| CL-04 | Adapter Improvement Register | ✅ | Evidence-backed candidate register committed |
+| CL-05 | Public-site submission CTA | ✅ source / 🟡 live after DL-35 | DE/IT/EN CTA points to GitHub submission form |
+| CL-06 | Move the generic Community Adapter Lab to `lrs-adapter` once DL-54/DL-55 complete | 🟡 | Generic feedback loop becomes canonical with generic Adapter; DSM-LRS retains DSM-specific cases |
+
+**Promotion rule:** submission → privacy/rights check → review/classification → reviewed example and/or improvement candidate → tests → release decision.
+
+**Safety rule:** one serious ASSESSMENT_SAFETY case may trigger immediate review; minor preferences normally require repeated evidence.
+
+---
+
 # Phase 6 — Integration, verification and release
 
 | ID | Task | Result | Verification / gate | Depends on |
