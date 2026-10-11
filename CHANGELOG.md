@@ -4,6 +4,16 @@ All notable public/product changes to DSM-LRS are recorded here.
 
 ## Unreleased
 
+### Standalone lrs-adapter extraction complete
+- created public `ftreppo/lrs-adapter` repository with Apache-2.0;
+- migrated generic Adapter instruction, contract, PolicyPack schema, synthetic fixture and tests;
+- installed independent standalone CI;
+- standalone CI run #1: **SUCCESS**;
+- forbidden-dependency scan: PASS;
+- DSM-LRS now pins `lrs-adapter 0.1.0-alpha.1` through `integrations/lrs-adapter/`;
+- former generic prototype copies in DSM-LRS are provenance-only and non-canonical;
+- generic Community Adapter Lab moved to `lrs-adapter`.
+
 ### Community Adapter Lab
 - added structured public GitHub Issue Form for anonymized Adapter examples;
 - added mandatory privacy/sharing-rights gate and contributor permission;
