@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<h1>DSM Overview</h1><p class="muted">Read-only school-wide nel prototipo.</p><table><tr><th>Classe</th><th>Studenti</th><th>Support status CURRENT</th></tr>{% for r in rows %}<tr><td>{{ r.class_id }}</td><td>{{ r.students }}</td><td>{{ r.current_support }}</td></tr>{% endfor %}</table>{% endblock %}
