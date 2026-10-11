@@ -146,6 +146,8 @@ This workstream collects public-safe Adapter use as evidence for product improve
 
 **Promotion rule:** submission → privacy/rights check → review/classification → reviewed example and/or improvement candidate → tests → release decision.
 
+**Public-language rule:** all participant-facing Community pages and promoted examples use **German → Italian → English**, in that order. Configuration, schemas, maintainer checklists and technical registers may remain English-only.
+
 **Safety rule:** one serious ASSESSMENT_SAFETY case may trigger immediate review; minor preferences normally require repeated evidence.
 
 ---
