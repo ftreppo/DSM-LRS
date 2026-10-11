@@ -139,7 +139,7 @@ body:
     id: reviewed_example_permission
     attributes:
       label: "May we include a reviewed/anonymized version in the project examples?"
-      description: "Selecting yes allows maintainers to curate a reviewed version into examples/community/reviewed/. Attribution will follow the public GitHub contribution record unless you request otherwise."
+      description: "Selecting Yes authorizes maintainers to reproduce and adapt a public-safe reviewed version in this repository under the repository license. If rights are unclear, the submission remains analysis-only. Attribution follows the public GitHub contribution record unless otherwise agreed."
       options:
         - "Yes"
         - "No — analysis only"
