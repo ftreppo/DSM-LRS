@@ -41,7 +41,7 @@ Use explicit states such as:
 - SUPERSEDED;
 - REVIEW_REQUIRED / UNVERIFIED.
 
-For the currently registered DSM 2015 guideline, source freshness remains REVIEW before claims of current official DSM-rule compliance.
+For the registered DSM 2015 guideline, C13 is now **UPDATE_REQUIRED / MANUAL DSM VERSION CHECK**. Current official BLASchA/KMK sources include materially newer 2024/2025 revisions. The 2015 DSM document may remain a DSM-local working source, but it cannot by itself establish current authority freshness. See `docs/authority/c13-source-freshness-2026-10-12.md`.
 
 ## Protected material
 
