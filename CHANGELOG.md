@@ -12,7 +12,8 @@ All notable public/product changes to DSM-LRS are recorded here.
 - added Adapter Improvement Register;
 - added public Community Adapter Example JSON Schema;
 - added multilingual public-site CTA for submissions;
-- raw issues remain non-canonical until review/promotion.
+- raw issues remain non-canonical until review/promotion;
+- public Community pages now follow **German → Italian → English**; maintainer/configuration artifacts may remain English-only.
 
 
 ### Public site
