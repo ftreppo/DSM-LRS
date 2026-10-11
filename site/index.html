@@ -1,91 +1,114 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="DSM-LRS public demo preview">
-    <meta name="color-scheme" content="light">
-    <title>DSM-LRS — Demo Preview</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Zum Inhalt springen</a>
-    <header class="site-header">
-      <div class="shell header-inner">
-        <a class="brand" href="#top" aria-label="DSM-LRS Startseite">DSM<span>–</span>LRS</a>
-        <div class="header-actions">
-          <span class="demo-pill" data-i18n="demoPill"></span>
-          <div class="language-switcher" role="group" aria-label="Sprache wählen">
-            <button type="button" data-language="de" aria-pressed="true">DE</button>
-            <button type="button" data-language="it" aria-pressed="false">IT</button>
-            <button type="button" data-language="en" aria-pressed="false">EN</button>
-          </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DSM-LRS — open tools and documentation for accessible learning materials">
+  <meta name="color-scheme" content="light">
+  <title>DSM-LRS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main" data-i18n="skip"></a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="DSM-LRS">DSM<span>–</span>LRS</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about" data-i18n="navAbout"></a>
+        <a href="#how" data-i18n="navHow"></a>
+        <a href="manual.html" data-i18n="navManual"></a>
+        <a href="help.html" data-i18n="navHelp"></a>
+      </nav>
+      <div class="header-actions">
+        <span class="status-pill" data-i18n="publicProject"></span>
+        <div class="language-switcher" role="group" aria-label="Language">
+          <button type="button" data-language="de" aria-pressed="true">DE</button>
+          <button type="button" data-language="it" aria-pressed="false">IT</button>
+          <button type="button" data-language="en" aria-pressed="false">EN</button>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main id="main">
-      <section id="top" class="hero">
-        <div class="shell hero-grid">
-          <div>
-            <p class="eyebrow" data-i18n="eyebrow"></p>
-            <h1 data-i18n="heroTitle"></h1>
-            <p class="lede" data-i18n="heroText"></p>
+  <main id="main">
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div>
+          <p class="eyebrow" data-i18n="heroEyebrow"></p>
+          <h1 data-i18n="heroTitle"></h1>
+          <p class="lede" data-i18n="heroText"></p>
+          <div class="hero-actions">
+            <a class="button-link" href="manual.html" data-i18n="startManual"></a>
+            <a class="button-link secondary" href="https://github.com/ftreppo/DSM-LRS" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
           </div>
-          <aside class="access-card" aria-label="Zugangsmodell">
-            <p class="card-label" data-i18n="accessModel"></p>
-            <div class="roles" id="roles"></div>
-          </aside>
         </div>
-      </section>
+        <aside class="access-card" aria-labelledby="status-title">
+          <p class="card-label" id="status-title" data-i18n="statusTitle"></p>
+          <p class="version">0.1.0-alpha.1</p>
+          <p class="small" data-i18n="statusText"></p>
+        </aside>
+      </div>
+    </section>
 
-      <section class="section shell" aria-labelledby="updates-title">
+    <section id="about" class="section shell">
+      <div class="section-heading">
+        <div><p class="eyebrow" data-i18n="aboutLabel"></p><h2 data-i18n="aboutTitle"></h2></div>
+      </div>
+      <div class="prose-wide">
+        <p data-i18n="aboutText1"></p>
+        <p data-i18n="aboutText2"></p>
+      </div>
+    </section>
+
+    <section id="how" class="section muted-section">
+      <div class="shell">
         <div class="section-heading">
-          <div><p class="eyebrow" data-i18n="todayLabel"></p><h2 id="updates-title" data-i18n="updatesTitle"></h2></div>
-          <span class="section-note" data-i18n="syntheticNote"></span>
+          <div><p class="eyebrow" data-i18n="howLabel"></p><h2 data-i18n="howTitle"></h2></div>
+          <p data-i18n="howIntro"></p>
         </div>
-        <div class="card-grid" id="updates"></div>
-      </section>
-
-      <section class="section muted-section">
-        <div class="shell split-grid">
-          <div>
-            <div class="section-heading compact"><div><p class="eyebrow" data-i18n="datesLabel"></p><h2 data-i18n="datesTitle"></h2></div></div>
-            <div class="event-list" id="events"></div>
-          </div>
-          <div>
-            <div class="section-heading compact"><div><p class="eyebrow" data-i18n="documentsLabel"></p><h2 data-i18n="documentsTitle"></h2></div></div>
-            <div class="document-list" id="documents"></div>
-          </div>
+        <div class="card-grid three">
+          <article class="card"><span class="step">1</span><h3 data-i18n="howGitHubTitle"></h3><p data-i18n="howGitHubText"></p></article>
+          <article class="card"><span class="step">2</span><h3 data-i18n="howLibraryTitle"></h3><p data-i18n="howLibraryText"></p></article>
+          <article class="card"><span class="step">3</span><h3 data-i18n="howPrivateTitle"></h3><p data-i18n="howPrivateText"></p></article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section shell" aria-labelledby="knowledge-title">
-        <div class="knowledge-panel">
-          <div><p class="eyebrow" data-i18n="knowledgeLabel"></p><h2 id="knowledge-title" data-i18n="knowledgeTitle"></h2><p data-i18n="knowledgeText"></p></div>
-          <a class="button-link" href="#about" data-i18n="knowledgeAction"></a>
+    <section class="section shell" id="start">
+      <div class="section-heading">
+        <div><p class="eyebrow" data-i18n="startLabel"></p><h2 data-i18n="startTitle"></h2></div>
+        <p data-i18n="startIntro"></p>
+      </div>
+      <div class="card-grid two">
+        <a class="card action-card" href="manual.html#adapter"><span class="tag">ADAPTER</span><h3 data-i18n="adapterCardTitle"></h3><p data-i18n="adapterCardText"></p><span class="action" data-i18n="openManual"></span></a>
+        <a class="card action-card" href="https://github.com/ftreppo/DSM-LRS/tree/main/resources/parent-prompt/v0.2" target="_blank" rel="noopener noreferrer"><span class="tag">PARENT</span><h3 data-i18n="parentCardTitle"></h3><p data-i18n="parentCardText"></p><span class="action">GitHub ↗</span></a>
+        <a class="card action-card" href="help.html"><span class="tag">HELP</span><h3 data-i18n="helpCardTitle"></h3><p data-i18n="helpCardText"></p><span class="action" data-i18n="openHelp"></span></a>
+        <a class="card action-card" href="https://github.com/ftreppo/DSM-LRS/tree/main/docs" target="_blank" rel="noopener noreferrer"><span class="tag">DOCS</span><h3 data-i18n="docsCardTitle"></h3><p data-i18n="docsCardText"></p><span class="action">GitHub ↗</span></a>
+      </div>
+    </section>
+
+    <section class="section boundary-section">
+      <div class="shell split-grid">
+        <div>
+          <p class="eyebrow" data-i18n="privacyLabel"></p>
+          <h2 data-i18n="privacyTitle"></h2>
+          <p data-i18n="privacyText"></p>
         </div>
-      </section>
-
-      <section class="section world-news" aria-labelledby="news-title">
-        <div class="shell">
-          <div class="section-heading">
-            <div><p class="eyebrow" data-i18n="worldNewsLabel"></p><h2 id="news-title" data-i18n="worldNewsTitle"></h2><p data-i18n="worldNewsText"></p></div>
-            <span class="external-badge" data-i18n="externalBadge"></span>
-          </div>
-          <div class="filter-bar" role="group" aria-label="News filtern" id="news-filters"></div>
-          <div class="news-grid" id="news-items" aria-live="polite"></div>
-          <p class="external-notice" data-i18n="externalNotice"></p>
+        <div class="notice-card">
+          <strong data-i18n="authorityTitle"></strong>
+          <p data-i18n="authorityText"></p>
         </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <section id="about" class="section shell about" aria-labelledby="about-title">
-        <p class="eyebrow" data-i18n="aboutLabel"></p><h2 id="about-title" data-i18n="aboutTitle"></h2><p data-i18n="aboutText"></p>
-      </section>
-    </main>
-
-    <footer class="site-footer"><div class="shell"><span>DSM–LRS</span><span data-i18n="footerText"></span></div></footer>
-    <script src="data.js"></script>
-    <script src="app.js"></script>
-  </body>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span>DSM–LRS · 0.1.0-alpha.1</span>
+      <span><a href="manual.html" data-i18n="navManual"></a> · <a href="help.html" data-i18n="navHelp"></a> · <a href="https://github.com/ftreppo/DSM-LRS">GitHub</a></span>
+    </div>
+  </footer>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
 </html>
