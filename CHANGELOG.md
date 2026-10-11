@@ -4,6 +4,17 @@ All notable public/product changes to DSM-LRS are recorded here.
 
 ## Unreleased
 
+### Community Adapter Lab
+- added structured public GitHub Issue Form for anonymized Adapter examples;
+- added mandatory privacy/sharing-rights gate and contributor permission;
+- added Community Adapter Lab review model and maintainer checklist;
+- added reviewed-example staging under `examples/community/reviewed/`;
+- added Adapter Improvement Register;
+- added public Community Adapter Example JSON Schema;
+- added multilingual public-site CTA for submissions;
+- raw issues remain non-canonical until review/promotion.
+
+
 ### Public site
 - converted the static pilot into the official public project landing-page source;
 - added DE / IT / EN Welcome and architecture explanation;
