@@ -122,12 +122,14 @@ No file should have two competing canonical homes.
 | DL-51 | ✅ Define the Adapter standalone contract | Inputs, outputs, configuration, error model and extension points specified | Contract can be understood without reading DSM-LRS or MindMap docs | DL-50 |
 | DL-52 | ✅ Dependency audit | Identify every dependency on DSM-LRS, Google Drive, MindMap, Notion, user-specific paths and private infrastructure | Generic Adapter has zero mandatory dependency on MindMap/Notion/personal infrastructure; remaining DSM dependency is via explicit interface/config | DL-51 |
 | DL-53 | ✅ Standalone proof inside DSM-LRS tree | Adapter runs against fixtures/mock profile and generic library data | Clean test passes without DSM project state or private Drive access | DL-52 |
-| DL-54 | **Create public `lrs-adapter` repository only after G5 passes** | Independent repository exists | Public visibility and clean initial history verified | DL-53 |
-| DL-55 | Migrate generic Adapter code/contracts/tests | `lrs-adapter` becomes canonical for generic Adapter | Tests pass in new repo; no DSM-specific secrets/configuration copied | DL-54 |
-| DL-56 | Reconnect DSM-LRS as consumer | DSM-LRS consumes Adapter through versioned dependency/interface | DSM-LRS test suite passes against pinned Adapter version | DL-55 |
-| DL-57 | Independent portability test | Third party can use Adapter without DSM-LRS | Fresh clone/install/use from README succeeds with synthetic data | DL-55 |
+| DL-54 | ✅ **Create public `lrs-adapter` repository only after G5 passes** | Independent repository exists | Public visibility, Apache-2.0 and default branch verified | DL-53 |
+| DL-55 | ✅ Migrate generic Adapter code/contracts/tests | `lrs-adapter` becomes canonical for generic Adapter | Generic artifacts migrated; standalone CI installed | DL-54 |
+| DL-56 | ✅ Reconnect DSM-LRS as consumer | DSM-LRS consumes Adapter through pinned integration metadata | `integrations/lrs-adapter/` pins `0.1.0-alpha.1`; generic prototype marked non-canonical | DL-55 |
+| DL-57 | ✅ Independent portability test | Third party can use Adapter without DSM-LRS | Standalone GitHub Actions run #1 completed SUCCESS; tests + forbidden-dependency scan passed | DL-55 |
 
-**Gate G5 — Adapter extraction gate: ✅ PASS.** Generic/DSM component inventory, provider-neutral contract, dependency audit and standalone proof are complete. The generic portable artifact has zero mandatory DSM-LRS/MindMap/Notion/Drive dependencies; contract checks pass 8/8. Creation of `lrs-adapter` is now authorized under DL-54.
+**Gate G5 — Adapter extraction gate: ✅ PASS.** Generic/DSM component inventory, provider-neutral contract, dependency audit and standalone proof are complete. The generic portable artifact has zero mandatory DSM-LRS/MindMap/Notion/Drive dependencies; contract checks pass 8/8.
+
+**Extraction status — COMPLETE:** `ftreppo/lrs-adapter` is public and canonical; standalone CI run #1 is SUCCESS; DSM-LRS pins baseline `0.1.0-alpha.1` as consumer.
 
 ---
 
@@ -142,7 +144,7 @@ This workstream collects public-safe Adapter use as evidence for product improve
 | CL-03 | Reviewed-example area + structured example schema | ✅ | `examples/community/reviewed/` + JSON Schema committed |
 | CL-04 | Adapter Improvement Register | ✅ | Evidence-backed candidate register committed |
 | CL-05 | Public-site submission CTA | ✅ source / 🟡 live after DL-35 | DE/IT/EN CTA points to GitHub submission form |
-| CL-06 | Move the generic Community Adapter Lab to `lrs-adapter` once DL-54/DL-55 complete | 🟡 | Generic feedback loop becomes canonical with generic Adapter; DSM-LRS retains DSM-specific cases |
+| CL-06 | ✅ Move the generic Community Adapter Lab to `lrs-adapter` once DL-54/DL-55 complete | ✅ | Generic form/docs/schema/reviewed-example structure migrated; DSM-LRS retains DSM-specific cases |
 
 **Promotion rule:** submission → privacy/rights check → review/classification → reviewed example and/or improvement candidate → tests → release decision.
 
@@ -174,9 +176,9 @@ This workstream collects public-safe Adapter use as evidence for product improve
 
 ## Immediate next action
 
-**DL-54 — Create the public `lrs-adapter` repository.**
+**DL-60 — Cross-repository architecture check.**
 
-G5 is PASS. G3 is now also PASS; GitHub Pages is live and verified.
+DL-54–DL-57 and CL-06 are complete. `lrs-adapter` is canonical for the generic Adapter; DSM-LRS is the consumer/integrator.
 
 Phase 2 is complete. The current public/product baseline is migrated and versioned as `0.1.0-alpha.1`; World News tests are repository-portable (9/9 PASS), Auth MVP `v0.3-public.1` is verified for public source/local synthetic testing (16/16 PASS), provenance is recorded, and Drive explicitly defers product canon to GitHub. Next is Phase 3: convert the already migrated `site/` pilot source into the official GitHub Pages entry point.
 
