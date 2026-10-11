@@ -1,3 +1,6 @@
+> **Canonical generic Community examples:** https://github.com/ftreppo/lrs-adapter/tree/main/examples/community
+> This DSM-LRS area is retained for DSM-specific cases/integrations only.
+
 # Community Adapter Examples
 
 ---
