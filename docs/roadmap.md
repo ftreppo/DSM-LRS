@@ -1,6 +1,6 @@
 # DSM-LRS — GitHub / Drive Separation Roadmap v0.1
 
-**Status:** ACTIVE — public repository bootstrapped; Phase 1 ready  
+**Status:** ACTIVE — Phase 1 complete; Gate G1 PASS  
 **Date:** 2026-10-11  
 **Owner:** DSM-LRS project  
 **Coordination:** MindMap / REGIA only; MindMap does not own or execute the DSM-LRS product.  
@@ -60,12 +60,12 @@ No file should have two competing canonical homes.
 
 | ID | Task | Result | Verification / gate | Depends on |
 |---|---|---|---|---|
-| DL-10 | Inventory current Drive project | File/folder inventory of DSM-LRS including pilot public surface, Adapter, contracts, tasks/state and reference material | Every relevant item has an ID/path and current role | G0 |
-| DL-11 | Classify each item | Each item marked **PRODUCT / LIBRARY-GENERAL / LIBRARY-PROTECTED / OPERATIONAL-STATE / LEGACY** | No unclassified item on the migration critical path | DL-10 |
-| DL-12 | Identify the existing pilot-page implementation | Source files/configuration for the pilot public page are located and understood | Can state exactly what must move to GitHub Pages and what stays in Drive | DL-10 |
-| DL-13 | Define canonical-home map | One destination per information type | Conflict check finds no file intended to remain canonical in both Drive and GitHub | DL-11, DL-12 |
+| DL-10 | ✅ Inventory current Drive project | File/folder inventory of DSM-LRS including pilot public surface, Adapter, contracts, tasks/state and reference material | Every relevant item has an ID/path and current role | G0 |
+| DL-11 | ✅ Classify each item | Each item marked **PRODUCT / LIBRARY-GENERAL / LIBRARY-PROTECTED / OPERATIONAL-STATE / LEGACY** | No unclassified item on the migration critical path | DL-10 |
+| DL-12 | ✅ Identify the existing pilot-page implementation | Source files/configuration for the pilot public page are located and understood | Can state exactly what must move to GitHub Pages and what stays in Drive | DL-10 |
+| DL-13 | ✅ Define canonical-home map | One destination per information type | Conflict check finds no file intended to remain canonical in both Drive and GitHub | DL-11, DL-12 |
 
-**Gate G1 — Classification complete:** nothing is copied publicly unless its class and canonical home are known.
+**Gate G1 — Classification complete: ✅ PASS.** Migration-critical areas are classified; protected/operational material is excluded from automatic publication.
 
 ---
 
@@ -153,9 +153,9 @@ No file should have two competing canonical homes.
 
 ## Immediate next action
 
-**DL-10 — Inventory current Drive project.**
+**DL-20 — Create repository structure.**
 
-The roadmap is now canonical in **ftreppo/DSM-LRS**. MindMap keeps coordination status, blockers and references only.
+Phase 1 inventory/classification is recorded in [docs/migration/inventory-classification-v0.1.md](./migration/inventory-classification-v0.1.md).
 
 ## Explicit non-goals
 
