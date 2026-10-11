@@ -1,0 +1,39 @@
+{
+  "schema": "DSM_LRS_OPERATIONAL_MEASURE_REGISTER_V2_5",
+  "version": "2.5",
+  "data_boundary": "MINIMIZED_OPERATIONAL_FACTS_ONLY",
+  "allowed_statuses": [
+    "BESTÄTIGT",
+    "REGELKONFORM MÖGLICH",
+    "NICHT ANWENDEN",
+    "ZU KLÄREN"
+  ],
+  "process_flags": {
+    "manual_review_required": "boolean; not a measure status"
+  },
+  "register_version": "0.0-empty-template",
+  "measures": [],
+  "clarification_result_allowed": [
+    "BESTÄTIGT",
+    "NICHT ANWENDEN",
+    "ZU KLÄREN"
+  ],
+  "required_measure_fields": [
+    "measure_id",
+    "measure",
+    "status",
+    "scope",
+    "basis_source",
+    "effective_date",
+    "review_date",
+    "confirming_role",
+    "profile_register_version",
+    "manual_review_required"
+  ],
+  "prohibited_ordinary_content": [
+    "raw diagnosis",
+    "full PDP/Förderplan",
+    "clinical/test values",
+    "unnecessary identifiers"
+  ]
+}
