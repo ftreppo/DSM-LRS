@@ -153,9 +153,9 @@ No file should have two competing canonical homes.
 
 ## Immediate next action
 
-**DL-21 — Continue bounded PRODUCT migration.**
+**DL-21A — Auth MVP public-code security review.**
 
-DL-20 is complete. DL-21 and DL-22 are in progress. Verified migrations so far: (1) five Source Library JSON Schemas; (2) complete Adapter core v2.5 plus public-safe v2.5.1 release documentation/conformance with sanitized public traceability; (3) the verified synthetic public pilot source under `site/`. Public provenance is recorded in [docs/migration/provenance-v0.1.md](./migration/provenance-v0.1.md). Continue only with content that has passed privacy/security inspection.
+DL-20 is complete. DL-21 and DL-22 are in progress. Verified migrations now include Source Library technical schemas, Adapter core v2.5 / release v2.5.1, the synthetic public pilot site, Parent Prompt QUICK v0.2, the World News product pipeline, and generic protected-core contracts. Provenance is recorded in [docs/migration/provenance-v0.1.md](./migration/provenance-v0.1.md); open residuals are tracked in [docs/migration/residuals-v0.1.md](./migration/residuals-v0.1.md).
 
 ## Explicit non-goals
 
