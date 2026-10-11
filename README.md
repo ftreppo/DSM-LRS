@@ -12,7 +12,7 @@
 
 GitHub is canonical for versioned product code, specifications, tests, public documentation and site source. Google Drive remains canonical for the LRS/DSM document Library, protected/personalized material and operational state.
 
-The next workstream is the official GitHub Pages entry point, based on the existing migrated static pilot in `site/`.
+GitHub Pages is live and verified. The generic Adapter is extracted to `ftreppo/lrs-adapter`. The current remaining release action is to tag the first public architecture baseline.
 
 ## Architecture boundary
 
@@ -22,6 +22,17 @@ The next workstream is the official GitHub Pages entry point, based on the exist
 - **MindMap / REGIA:** coordination only; never a runtime dependency of DSM-LRS.
 
 See [the project roadmap](docs/roadmap.md), [changelog](CHANGELOG.md), and [versioning convention](docs/versioning.md).
+
+## Verification status
+
+- G2 — product canon: PASS
+- G3 — public Pages/no-account UX: PASS
+- G4 — Library boundary: PASS
+- G5 — generic Adapter extraction gate: PASS
+- DL-60…DL-65 — architecture/privacy/fresh-user/fresh-developer/library/canon audits: PASS
+- C13 — DSM source freshness: **REVIEW**; no claim of current official DSM-rule compliance
+
+See [G6 verification](docs/release/g6-verification-v0.1.md).
 
 ## Privacy
 
