@@ -1,0 +1,9 @@
+{
+  "version": "0.1",
+  "provider": "local",
+  "roots": {
+    "dsm": {"class": "GENERAL_DSM", "locator": "./library/dsm", "access": "REFERENCE", "required": false},
+    "lrs": {"class": "GENERAL_LRS", "locator": "./library/lrs", "access": "REFERENCE", "required": false},
+    "personalized": {"class": "PROTECTED_PERSONALIZED", "locator": "./private/profiles", "access": "PROTECTED", "required": false}
+  }
+}
