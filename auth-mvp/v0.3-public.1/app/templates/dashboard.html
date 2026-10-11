@@ -1,0 +1,12 @@
+{% extends 'base.html' %}{% block content %}
+<h1>Dashboard</h1><p class="muted">Persona: <b>{{ user.username }}</b> · {{ user.roles|join(', ') }}</p>
+<div class="kpis"><div class="kpi"><b>{{ counts.students }}</b><span>studenti demo</span></div><div class="kpi"><b>{{ counts.classes }}</b><span>classi demo</span></div><div class="kpi"><b>{{ counts.accounts }}</b><span>account demo</span></div></div>
+<div class="cards">
+{% if 'MEMBER' in user.roles %}<a class="card action" href="/member/resources"><b>Area Member</b><span>Risorse generali</span></a>{% endif %}
+{% if 'STUDENT' in user.roles %}<a class="card action" href="/student/{{ user.linked_student_id }}"><b>Il mio profilo</b><span>Solo profilo approvato proprio</span></a>{% endif %}
+{% for a in assignments %}{% if a.subject_id != 'ALL' %}<a class="card action" href="/class/{{ a.class_id }}/subject/{{ a.subject_id }}"><b>{{ a.class_id }} · {{ a.subject_id }}</b><span>Profilo classe + materia</span></a><a class="card action" href="/semester-review/{{ a.class_id }}/{{ a.subject_id }}"><b>Semester Review</b><span>{{ a.class_id }} · {{ a.subject_id }}</span></a>{% else %}<a class="card action" href="/class/{{ a.class_id }}/master"><b>Class Master Report</b><span>{{ a.class_id }}</span></a>{% endif %}{% endfor %}
+{% if 'OPERATOR' in user.roles %}<a class="card action" href="/operator/drafts"><b>Operator Console</b><span>Draft e ingestion</span></a>{% endif %}
+{% if 'LRS_ADMIN' in user.roles %}<a class="card action" href="/lrs/reviews"><b>LRS Admin</b><span>Review e approvazioni</span></a><a class="card action" href="/class/CLS-2026-7A/master"><b>Master Report 7A</b><span>School-wide LRS</span></a>{% endif %}
+{% if 'DSM_COORDINATOR' in user.roles %}<a class="card action" href="/dsm/overview"><b>DSM Overview</b><span>Read-only</span></a><a class="card action" href="/class/CLS-2026-7A/master"><b>Master Report 7A</b><span>Read-only</span></a>{% endif %}
+{% if 'SYSTEM_ADMIN' in user.roles %}<a class="card action" href="/admin/accounts"><b>System Admin</b><span>Account, ruoli, audit</span></a>{% endif %}
+</div>{% endblock %}
