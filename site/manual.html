@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="de">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="DSM-LRS user manual"><title>DSM-LRS — User Manual</title><link rel="stylesheet" href="styles.css"></head>
+<body data-page="manual">
+<a class="skip-link" href="#main" data-i18n="skip"></a>
+<header class="site-header"><div class="shell header-inner"><a class="brand" href="index.html">DSM<span>–</span>LRS</a><nav class="main-nav"><a href="index.html#about" data-i18n="navAbout"></a><a href="index.html#how" data-i18n="navHow"></a><a href="manual.html" data-i18n="navManual"></a><a href="help.html" data-i18n="navHelp"></a></nav><div class="header-actions"><div class="language-switcher" role="group" aria-label="Language"><button type="button" data-language="de" aria-pressed="true">DE</button><button type="button" data-language="it" aria-pressed="false">IT</button><button type="button" data-language="en" aria-pressed="false">EN</button></div></div></div></header>
+
+<main id="main">
+<section class="doc-hero"><div class="shell">
+<div data-lang="de"><p class="eyebrow">Benutzerhandbuch</p><h1>DSM-LRS benutzen</h1><p class="lede">Vom ersten Start bis zur sicheren Arbeit mit Lernmaterial und Prüfungen.</p></div>
+<div data-lang="it" hidden><p class="eyebrow">Manuale utente</p><h1>Usare DSM-LRS</h1><p class="lede">Dal primo avvio all'uso sicuro con materiali di studio e verifiche.</p></div>
+<div data-lang="en" hidden><p class="eyebrow">User manual</p><h1>Using DSM-LRS</h1><p class="lede">From first start to safe work with study material and assessments.</p></div>
+</div></section>
+
+<section class="section shell doc-layout">
+<aside class="toc">
+  <strong>DSM-LRS</strong>
+  <a href="#quickstart">Quick start</a><a href="#adapter">Adapter</a><a href="#modes">STUDY · HOMEWORK · ASSESSMENT</a><a href="#privacy">Privacy</a><a href="#commands">Commands</a><a href="#status">Status</a>
+</aside>
+<article class="doc-content">
+<div data-lang="de">
+<h2 id="quickstart">1. Quick Start</h2>
+<p>Für die häufigste Nutzung brauchst du nur den öffentlichen Adapter und ein KI-Assistenzsystem, das Text oder Dateien verarbeiten kann.</p>
+<ol><li>Öffne den <a href="https://github.com/ftreppo/DSM-LRS/blob/main/adapter/core/DSM_LRS_ADAPTER_PORTABLE_v2.5.md">Portable Adapter auf GitHub</a>.</li><li>Kopiere oder lade die Adapter-Anweisung in eine neue Unterhaltung.</li><li>Warte auf <strong>SYSTEM READY</strong>.</li><li>Füge oder lade dein Material hinzu.</li><li>Nenne <strong>Fach/Aktivität</strong>, <strong>Ziel</strong> und die Nutzungsart: STUDY, HOMEWORK oder ASSESSMENT.</li></ol>
+<div class="callout"><strong>Minimalprinzip:</strong> Für STUDY/HOMEWORK nur den fehlenden Mindestkontext angeben. Keine Rohdiagnose und keinen vollständigen PDP/Förderplan hochladen.</div>
+
+<h2 id="adapter">2. Der Adapter</h2>
+<p>Der DSM-LRS Adapter ist eine Arbeitsanweisung, die dem Assistenzsystem sagt, wie Material strukturiert und angepasst werden darf. Er wählt die kleinste kompatible Anpassung; die Nutzungsart allein bestimmt nicht automatisch das Ausgabeformat.</p>
+<p>Der aktuelle öffentliche Kern ist <strong>v2.5</strong>; die Release-Traceability ist <strong>v2.5.1</strong>.</p>
+
+<h2 id="modes">3. STUDY, HOMEWORK, ASSESSMENT</h2>
+<h3>STUDY · LERNEN</h3><p>Für Lerntexte, Zusammenfassungen, Studienblätter und Materialien, die leichter zu lesen und zu navigieren sein sollen.</p>
+<h3>HOMEWORK · HAUSAUFGABEN</h3><p>Für Aufgabenmaterial. Fragen, Fakten, Zahlen, Fachbegriffe, Bedingungen und Anforderungen bleiben erhalten; der Adapter soll die Aufgaben nicht lösen.</p>
+<h3>ASSESSMENT · LEISTUNGSÜBERPRÜFUNG</h3><p>Zusätzlich musst du die <strong>tatsächlich geprüfte Kompetenz</strong> und bekannte Einschränkungen angeben. Ohne diese Information stoppt der Adapter vor der Anpassung.</p>
+<div class="callout warning"><strong>Prüfungen:</strong> Keine Lösungshinweise, keine nicht autorisierte inhaltliche Erleichterung und keine eigenständige Änderung von Lernziel, Punkten oder Bewertungskriterien.</div>
+
+<h2 id="privacy">4. Datenschutz</h2>
+<p>Vor dem Upload unnötige personenbezogene Daten entfernen oder abdecken. Das öffentliche Projekt benötigt keine Rohdiagnose, Anamnese, vollständigen klinischen Berichte oder unnötige Identifikatoren.</p>
+
+<h2 id="commands">5. Befehle</h2>
+<pre>DSM-LRS START
+DSM-LRS HELP
+DSM-LRS INFO
+DSM-LRS ABOUT</pre>
+<p><code>ABOUT</code> ist ein Alias von <code>INFO</code>.</p>
+
+<h2 id="status">6. Status und Grenzen</h2>
+<p>Der Adapter ist ein Projektwerkzeug, kein offizielles DSM-Dokument. Die Quellenfrische der registrierten DSM-Leitlinie von 2015 bleibt vor realem operativem Einsatz zu prüfen. Aktuelle individuelle Vereinbarungen und geltende Schul-/Prüfungsregeln haben Vorrang.</p>
+</div>
+
+<div data-lang="it" hidden>
+<h2 id="quickstart-it">1. Quick Start</h2>
+<p>Per l'uso più comune servono soltanto l'Adapter pubblico e un assistente AI capace di lavorare con testo o file.</p>
+<ol><li>Apri il <a href="https://github.com/ftreppo/DSM-LRS/blob/main/adapter/core/DSM_LRS_ADAPTER_PORTABLE_v2.5.md">Portable Adapter su GitHub</a>.</li><li>Copia o carica l'istruzione dell'Adapter in una nuova conversazione.</li><li>Attendi <strong>SYSTEM READY</strong>.</li><li>Incolla o carica il materiale.</li><li>Indica <strong>materia/attività</strong>, <strong>obiettivo</strong> e modalità: STUDY, HOMEWORK oppure ASSESSMENT.</li></ol>
+<div class="callout"><strong>Principio minimo:</strong> per STUDY/HOMEWORK fornisci soltanto il contesto minimo mancante. Non caricare diagnosi grezze o il PDP/Förderplan completo.</div>
+
+<h2 id="adapter-it">2. L'Adapter</h2>
+<p>DSM-LRS Adapter è un'istruzione di lavoro che definisce come un assistente può strutturare e adattare il materiale. Seleziona l'adattamento minimo compatibile; la modalità d'uso da sola non determina automaticamente il formato di output.</p>
+<p>Il core pubblico attuale è <strong>v2.5</strong>; la release di traceability è <strong>v2.5.1</strong>.</p>
+
+<h2 id="modes-it">3. STUDY, HOMEWORK, ASSESSMENT</h2>
+<h3>STUDY · STUDIO</h3><p>Per testi di studio, schede, sintesi e materiali da rendere più leggibili e navigabili.</p>
+<h3>HOMEWORK · COMPITI</h3><p>Per materiale di esercizio. Domande, fatti, numeri, termini disciplinari, condizioni e richieste vengono preservati; l'Adapter non deve risolvere gli esercizi.</p>
+<h3>ASSESSMENT · VERIFICA</h3><p>Devi fornire anche la <strong>competenza effettivamente valutata</strong> e le eventuali restrizioni. Senza questa informazione l'Adapter si ferma prima dell'adattamento.</p>
+<div class="callout warning"><strong>Verifiche:</strong> niente suggerimenti di soluzione, facilitazioni semantiche non autorizzate o modifiche autonome di obiettivo didattico, punti o criteri di valutazione.</div>
+
+<h2 id="privacy-it">4. Privacy</h2>
+<p>Prima del caricamento elimina o copri i dati personali non necessari. Il progetto pubblico non richiede diagnosi grezze, anamnesi, referti clinici completi o identificativi superflui.</p>
+
+<h2 id="commands-it">5. Comandi</h2>
+<pre>DSM-LRS START
+DSM-LRS HELP
+DSM-LRS INFO
+DSM-LRS ABOUT</pre>
+<p><code>ABOUT</code> è un alias di <code>INFO</code>.</p>
+
+<h2 id="status-it">6. Stato e limiti</h2>
+<p>L'Adapter è uno strumento di progetto, non un documento ufficiale DSM. La freschezza della linea guida DSM registrata del 2015 deve ancora essere verificata prima di un uso operativo reale. Gli accordi individuali e le regole scolastiche/d'esame vigenti prevalgono.</p>
+</div>
+
+<div data-lang="en" hidden>
+<h2 id="quickstart-en">1. Quick Start</h2>
+<p>For the common workflow you only need the public Adapter and an AI assistant that can work with text or files.</p>
+<ol><li>Open the <a href="https://github.com/ftreppo/DSM-LRS/blob/main/adapter/core/DSM_LRS_ADAPTER_PORTABLE_v2.5.md">Portable Adapter on GitHub</a>.</li><li>Paste or upload the Adapter instruction into a new conversation.</li><li>Wait for <strong>SYSTEM READY</strong>.</li><li>Paste or upload the material.</li><li>Give the <strong>subject/activity</strong>, <strong>objective</strong> and use-case mode: STUDY, HOMEWORK or ASSESSMENT.</li></ol>
+<div class="callout"><strong>Minimum-context principle:</strong> for STUDY/HOMEWORK provide only the missing minimum context. Do not upload a raw diagnosis or full PDP/Förderplan.</div>
+
+<h2 id="adapter-en">2. The Adapter</h2>
+<p>The DSM-LRS Adapter is a working instruction defining how an assistant may structure and adapt material. It selects the smallest compatible adaptation; the use-case mode alone does not automatically determine the output format.</p>
+<p>The current public core is <strong>v2.5</strong>; release traceability is <strong>v2.5.1</strong>.</p>
+
+<h2 id="modes-en">3. STUDY, HOMEWORK, ASSESSMENT</h2>
+<h3>STUDY</h3><p>For study texts, summaries, study sheets and material that should be easier to read and navigate.</p>
+<h3>HOMEWORK</h3><p>For task material. Questions, facts, numbers, subject terms, conditions and requirements are preserved; the Adapter should not solve the exercises.</p>
+<h3>ASSESSMENT</h3><p>You must also provide the <strong>competence actually being assessed</strong> and any applicable restrictions. Without this, the Adapter stops before adaptation.</p>
+<div class="callout warning"><strong>Assessments:</strong> no solution hints, unauthorized semantic assistance, or autonomous changes to learning objective, points or assessment criteria.</div>
+
+<h2 id="privacy-en">4. Privacy</h2>
+<p>Before upload, remove or cover unnecessary personal data. The public project does not require raw diagnoses, anamnesis, full clinical reports or unnecessary identifiers.</p>
+
+<h2 id="commands-en">5. Commands</h2>
+<pre>DSM-LRS START
+DSM-LRS HELP
+DSM-LRS INFO
+DSM-LRS ABOUT</pre>
+<p><code>ABOUT</code> is an alias of <code>INFO</code>.</p>
+
+<h2 id="status-en">6. Status and limits</h2>
+<p>The Adapter is a project tool, not an official DSM document. Freshness of the registered 2015 DSM guideline still needs verification before real operational use. Current individual arrangements and applicable school/examination rules prevail.</p>
+</div>
+</article>
+</section>
+</main>
+<footer class="site-footer"><div class="shell footer-inner"><span>DSM–LRS · User Manual</span><span><a href="index.html">Home</a> · <a href="help.html" data-i18n="navHelp"></a> · <a href="https://github.com/ftreppo/DSM-LRS">GitHub</a></span></div></footer>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>
