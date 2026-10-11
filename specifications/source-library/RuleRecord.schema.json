@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:dsm-lrs:RuleRecord:v1",
+  "title": "RuleRecord",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["rule_id","title","description","rule_family","scope","subjects","school_stages","use_cases","assessment_impact","status","proposer_type","pedagogical_review_status","authority_review_status","school_approval_actor_or_role","testing_status","active_release","supersedes","superseded_by","retired_reason","created_at","updated_at"],
+  "properties": {
+    "rule_id": {"type": "string"},
+    "title": {"type": "string"},
+    "description": {"type": "string"},
+    "rule_family": {"type": "string"},
+    "scope": {"type": "string"},
+    "subjects": {"type": "array","items": {"type": "string"}},
+    "school_stages": {"type": "array","items": {"type": "string"}},
+    "use_cases": {"type": "array","items": {"type": "string"}},
+    "assessment_impact": {"type": "string"},
+    "status": {"enum": ["CURRENT","PROPOSED","TESTING","APPROVED_NOT_ACTIVE","SUPERSEDED","RETIRED"]},
+    "proposer_type": {"type": "string"},
+    "pedagogical_review_status": {"type": "string"},
+    "authority_review_status": {"type": "string"},
+    "school_approval_actor_or_role": {"type": "string"},
+    "testing_status": {"type": "string"},
+    "active_release": {"type": ["string","null"]},
+    "supersedes": {"type": "array","items": {"type": "string"}},
+    "superseded_by": {"type": "array","items": {"type": "string"}},
+    "retired_reason": {"type": ["string","null"]},
+    "created_at": {"type": "string"},
+    "updated_at": {"type": "string"}
+  }
+}
