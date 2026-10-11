@@ -1,0 +1,9 @@
+{
+  "version": "0.1",
+  "provider": "google_drive",
+  "roots": {
+    "dsm": {"class": "GENERAL_DSM", "locator": "private-config:GENERAL_DSM_ROOT", "access": "REFERENCE", "required": false},
+    "lrs": {"class": "GENERAL_LRS", "locator": "private-config:GENERAL_LRS_ROOT", "access": "REFERENCE", "required": false},
+    "personalized": {"class": "PROTECTED_PERSONALIZED", "locator": "private-config:PROTECTED_PERSONALIZED_ROOT", "access": "PROTECTED", "required": false}
+  }
+}
