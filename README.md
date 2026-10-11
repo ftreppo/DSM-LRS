@@ -30,9 +30,9 @@ See [the project roadmap](docs/roadmap.md), [changelog](CHANGELOG.md), and [vers
 - G4 — Library boundary: PASS
 - G5 — generic Adapter extraction gate: PASS
 - DL-60…DL-65 — architecture/privacy/fresh-user/fresh-developer/library/canon audits: PASS
-- C13 — DSM source freshness: **REVIEW**; no claim of current official DSM-rule compliance
+- C13 — DSM source freshness: **UPDATE_REQUIRED / MANUAL DSM VERSION CHECK**; current BLASchA/KMK sources from 2024/2025 are newer than the registered 2015 DSM-local working source; no claim of current official DSM-rule compliance
 
-See [G6 verification](docs/release/g6-verification-v0.1.md).
+See [G6 verification](docs/release/g6-verification-v0.1.md) and [C13 source-freshness verification](docs/authority/c13-source-freshness-2026-10-12.md).
 
 ## Privacy
 
