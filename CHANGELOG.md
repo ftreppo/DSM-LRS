@@ -4,6 +4,14 @@ All notable public/product changes to DSM-LRS are recorded here.
 
 ## Unreleased
 
+### DL-66 / G6 closure
+- DSM-LRS `v0.1.0-alpha.1` pre-release published and verified at commit `20a342f6b09fb3240ca0e22be4b599750061104a`;
+- lrs-adapter `v0.1.0-alpha.1` pre-release published and verified at commit `836704aeed0d391a2a850b51ac1e4684fdb27580`;
+- DL-66 complete;
+- G6 PASS;
+- C13 remains **UPDATE_REQUIRED / MANUAL DSM VERSION CHECK** and is tracked separately.
+
+
 ### C13 source-freshness research
 - current DSM public LRS page still links to a protected DSM guideline;
 - project Library contains the registered DSM-local guideline adopted 12.02.2015;
