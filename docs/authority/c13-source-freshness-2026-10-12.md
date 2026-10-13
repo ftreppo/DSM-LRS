@@ -1,7 +1,7 @@
 # C13 — Official-source freshness verification
 
 **Date:** 2026-10-12  
-**Status:** **UPDATE_REQUIRED / MANUAL DSM VERSION CHECK**
+**Status:** **CURRENT DSM LOCAL VERSION CONFIRMED BY RICHARD / ALIGNMENT UPDATE REQUIRED**
 
 ## Question
 
@@ -60,17 +60,19 @@ https://www.kmk.org/downloads-dokumente/beschluesse-und-veroeffentlichungen/bild
 
 ## C13 conclusion
 
-The 2015 DSM guideline may still be a valid **DSM-local policy document**, but it is **not sufficient by itself as proof of current authority freshness**.
+On 2026-10-13 Franco reported that Richard Keiner confirmed that the 12.02.2015 DSM guideline is **still the DSM-local document currently in force**.
 
-At minimum, current operation must account for the newer BLASchA/KMK sources above.
+This closes the former uncertainty about which local DSM guideline is operative.
+
+However, local validity and external-authority alignment are separate questions. The document predates the current BLASchA/KMK 2024/2025 framework and therefore still requires an alignment review.
 
 Therefore:
 
-`official_source_freshness = UPDATE_REQUIRED`
+`dsm_local_version = CURRENT_CONFIRMED_BY_RICHARD`
 
-and not:
+`external_authority_alignment = UPDATE_REQUIRED`
 
-`CURRENT_CONFIRMED`
+The preferred update strategy is documented in [C13 — DSM 2015 guideline: update now or wait for Länder legislation?](c13-update-vs-wait-assessment-2026-10-13.md): **addendum now / full rewrite later**.
 
 ## Runtime consequence
 
@@ -84,23 +86,20 @@ Until the protected DSM guideline version is checked and DSM-local alignment is 
 
 ## Manual closure condition
 
-C13 can close only after both are verified:
+The DSM-local version check is now closed by the 2026-10-13 Richard confirmation.
 
-1. **DSM protected-document check**
-   - login to the DSM protected area;
-   - open the guideline linked from the current LRS page;
-   - record title, revision/version date, approval authority and whether it is still the 12.02.2015 text or a newer revision.
+C13 can fully close after the remaining **alignment/update decision** is completed:
 
-2. **DSM alignment check**
-   - confirm with the responsible DSM authority/LRS coordination that the local guideline currently in force has been reconciled with:
-     - BLASchA LRS recommendations i.d.F. 25.04.2025;
-     - BLASchA abschlussbezogener Nachteilsausgleich 11.12.2024;
-     - current DIA-PO/Rili DIA-PO where applicable.
+- reconcile the still-operative 12.02.2015 local guideline with:
+  - BLASchA LRS recommendations i.d.F. 25.04.2025;
+  - BLASchA abschlussbezogener Nachteilsausgleich 11.12.2024;
+  - current DIA-PO/Rili DIA-PO where applicable;
+- decide and approve the DSM-local update form (recommended: bounded Addendum first, full rewrite later).
 
 ## Project rule
 
-Until C13 closes, DSM-LRS may describe the 2015 document only as:
+Until C13 fully closes, DSM-LRS may describe the 2015 document as:
 
-**registered DSM-local working source (2015), current protected-page linkage observed, freshness/alignment not yet confirmed.**
+**current DSM-local guideline confirmed in force by Richard Keiner on 2026-10-13; alignment with newer BLASchA/KMK 2024/2025 authority remains under update review.**
 
-It must not be described as the latest applicable official rule.
+It must not be used to override newer or more specific BLASchA/KMK examination rules.
