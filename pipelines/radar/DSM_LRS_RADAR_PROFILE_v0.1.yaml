@@ -1,0 +1,118 @@
+radar_id: dsm-lrs
+version: "0.1"
+status: DESIGN_ONLY_NOT_ENABLED
+project_ref: ftreppo/DSM-LRS
+
+scope:
+  domains:
+    - dyslexia_lrs
+    - dyscalculia
+    - dysorthography_spelling
+    - dysgraphia_writing
+    - school_accommodations
+    - assistive_technology_ai
+    - research
+    - policy_legislation
+  languages: [it, de, en]
+  jurisdictions: [IT, DE, EU, GB, US]
+
+source_policy:
+  registry_refs:
+    - pipelines/world-news/WORLD_NEWS_SOURCES.json
+  allowed_source_classes:
+    - recognized_association
+    - scientific_professional_association
+    - public_intergovernmental_agency
+    - public_research_index
+    - public_institution
+
+patterns:
+  include_terms:
+    - dislessia
+    - dyslexia
+    - Legasthenie
+    - LRS
+    - dyscalculia
+    - discalculia
+    - Dyskalkulie
+    - disortografia
+    - dysorthography
+    - Rechtschreibstörung
+    - disgrafia
+    - dysgraphia
+    - school accommodations
+    - Nachteilsausgleich
+    - assistive technology
+    - AI education
+    - inclusive education
+    - learning disorder
+  include_regex:
+    - "(law|legislation|regulation|guideline|policy|decree|directive)"
+    - "(systematic review|meta-analysis|randomized|longitudinal study)"
+  exclude_terms: []
+  reason_codes:
+    - NEW_RESEARCH
+    - POLICY_CHANGE
+    - SCHOOL_ACCOMMODATION_CHANGE
+    - ASSESSMENT_SAFETY
+    - ASSISTIVE_TECH_CHANGE
+    - TERMINOLOGY_CHANGE
+
+semantic_topics:
+  - DYSLEXIA_LRS
+  - DYSCALCULIA
+  - DYSORTHOGRAPHY_SPELLING
+  - DYSGRAPHIA_WRITING
+  - ASSISTIVE_TECH_AI
+  - RESEARCH
+  - SCHOOL_ACCOMMODATIONS
+  - POLICY_LEGISLATION
+
+scoring:
+  workflow_candidate_threshold: 0.75
+  high_attention_thresholds:
+    relevance: 0.85
+    novelty: 0.70
+    impact: 0.70
+
+cadence:
+  base_interval: P1D
+  min_interval: PT6H
+  max_interval: P7D
+  high_attention_ttl: P7D
+
+workflow_map:
+  NEW_RESEARCH: RESEARCH_EVIDENCE_REVIEW
+  POLICY_CHANGE: POLICY_IMPACT_REVIEW
+  SCHOOL_ACCOMMODATION_CHANGE: POLICY_IMPACT_REVIEW
+  ASSESSMENT_SAFETY: ASSESSMENT_SAFETY_REVIEW
+  ASSISTIVE_TECH_CHANGE: ASSISTIVE_TECH_REVIEW
+  TERMINOLOGY_CHANGE: TERMINOLOGY_COMPATIBILITY_REVIEW
+
+data_handling:
+  classification: PUBLIC
+  allow_payload_copy: false
+  prohibited_payload:
+    - student_identifiers
+    - diagnoses
+    - clinical_records
+    - private_correspondence
+    - credentials
+    - private_drive_links
+
+automode:
+  current_mode: AM0
+  target_mode: AM1
+  future_candidate_mode: AM2
+  risk_ceiling_current: R0
+  bounded_r1_requires_separate_promotion: true
+
+publication_boundary:
+  radar_finding_implies_publication: false
+  public_news_approval_required: true
+  official_dsm_policy_change_automatic: false
+
+notes:
+  - Reuse World News source discovery; do not duplicate physical fetches inside a shared-intake run.
+  - AI may classify and propose; it may not approve DSM policy or public publication.
+  - Scheduler/watcher is not enabled by this profile.
